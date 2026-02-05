@@ -2,6 +2,9 @@
 using namespace std;
 
 int fib(int n){
+    if(n<=0){
+        return n+1;
+    }
     if(n==0 or n==1){
         return n;
     }
@@ -11,5 +14,5 @@ int fib(int n){
 int main(){
     int n;
     cin>>n;
-    cout<<fib(n)<<endl;
+    cout<<fib(n-1)<<endl;
 }
