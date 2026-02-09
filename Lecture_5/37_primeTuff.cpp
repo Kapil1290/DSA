@@ -77,6 +77,17 @@ int main(){
             }
         }
         cout<<endl;
+
+        int primeArr[] = {2,3,5,7,11,13,17,19};
+        int m =(n+1)/2;
+
+        // for(int i=1; i<=m; i++){
+        //     for(int j=1; j<=2*n){
+                
+        //     }
+        // }
+
+
     }
 }
 
