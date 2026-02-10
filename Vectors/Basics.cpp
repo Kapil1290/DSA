@@ -24,9 +24,15 @@ int main(){
 
     reverse(a.begin(),a.end());
 
+    cout<<endl;
+
+    sort(a.begin(),a.end());
     // printing of elements
     for(int i=0; i<a.size(); i++){
         cout<<a.at(i)<<" ";
     }
+
+
+    //solve leetcode 1492 
 }
     
