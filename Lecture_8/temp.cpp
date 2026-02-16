@@ -1,10 +1,12 @@
 #include<iostream>
+#include<cmath>
 #include<vector>
 using namespace std;
 
 int main() {
    
-	
+	int a = -34;
+	cout<<maths.abs(a);
 }
 
 

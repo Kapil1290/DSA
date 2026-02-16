@@ -17,8 +17,6 @@
 //     for(int i=0; i<size; i++){
 //         cout<<a[i]+i;
 //     }
-    
-
 // }
 
 
@@ -26,38 +24,42 @@
 using namespace std;
 
 int main() {
-	long long int n;
-	cin>>n;
-	long long int copyOfN = n;
-	int count=0;
-	int count1;
+// 	long long int n;
+// 	cin>>n;
+// 	long long int copyOfN = n;
+// 	int count=0;
+// 	int count1;
 
-    if(n==0){
-		cout<<"5";
-	}else{
-		// for number of digits of value
-	while(copyOfN!=0){
-		copyOfN=copyOfN / 10;
-		count++;
-	}
-	count1=count;
-	int arr[count1];
-	int i=0;
-	while(count>0){
-		int rem = n%10;
-		arr[i] = rem;
-		n=n/10;
-		i++; count--;
-	}
+//     if(n==0){
+// 		cout<<"5";
+// 	}else{
+// 		// for number of digits of value
+// 	while(copyOfN!=0){
+// 		copyOfN=copyOfN / 10;
+// 		count++;
+// 	}
+// 	count1=count;
+// 	int arr[count1];
+// 	int i=0;
+// 	while(count>0){
+// 		int rem = n%10;
+// 		arr[i] = rem;
+// 		n=n/10;
+// 		i++; count--;
+// 	}
 
-	for(int i=0; i<count1; i++){
-		if(arr[i]==0){
-			arr[i]=5;
-		}
-	}
+// 	for(int i=0; i<count1; i++){
+// 		if(arr[i]==0){
+// 			arr[i]=5;
+// 		}
+// 	}
 
-	for(int i=count1-1; i>=0; i--){
-		cout<<arr[i];
-	}
-	}
+// 	for(int i=count1-1; i>=0; i--){
+// 		cout<<arr[i];
+// 	}
+// 	}
+
+
+   float a = 0.5555555*(0-32);
+   cout<<a;
 }
