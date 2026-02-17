@@ -21,6 +21,7 @@
 
 
 #include<iostream>
+#include<vector>
 using namespace std;
 
 int main() {
@@ -61,7 +62,7 @@ int main() {
 
 
 
-int arr[] = {3,2,1,4,5};
+int arr[5];
 
 int n;
 cin>>n;
@@ -73,11 +74,9 @@ while(n!=0){
    pos++;
 }
 
-cout<<arr[4];
-cout<<arr[3];
-cout<<arr[2];
-cout<<arr[1];
-cout<<arr[0];
+for(int i=4; i>=0; i--){
+   cout<<arr[i];
+}
 
 
    // float a = 0.5555555*(0-32);
