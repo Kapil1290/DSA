@@ -3,9 +3,11 @@ using namespace std;
 int main(){
     int n;
     cin>>n;
+    int check=n;
     int sqr=0;
         int flag=0;
         while(sqr!=1){
+            sqr=0;
             while(n!=0){
                 int rem = n%10;
                 sqr = sqr+(rem*rem);
@@ -13,9 +15,9 @@ int main(){
             }
             n=sqr;
             flag++;
-            if(flag==n){
-                return false;
+            if(flag==check){
+                cout<<"false";
             }
         }
-        return true;
+        cout<<"true";
 }
