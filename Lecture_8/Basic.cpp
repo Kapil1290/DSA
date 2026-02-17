@@ -60,6 +60,26 @@ int main() {
 // 	}
 
 
-   float a = 0.5555555*(0-32);
-   cout<<a;
+
+int arr[] = {3,2,1,4,5};
+
+int n;
+cin>>n;
+int pos=1;
+while(n!=0){
+   int rem = n%10;
+   arr[rem-1]=pos;
+   n=n/10;
+   pos++;
+}
+
+cout<<arr[4];
+cout<<arr[3];
+cout<<arr[2];
+cout<<arr[1];
+cout<<arr[0];
+
+
+   // float a = 0.5555555*(0-32);
+   // cout<<a;
 }
