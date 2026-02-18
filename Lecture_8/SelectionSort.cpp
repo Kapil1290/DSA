@@ -12,9 +12,10 @@ int main(){
             if(arr[min]>arr[j]){
                 min = j;
             }
-            int temp = arr[min];
-            arr[min] = arr[i];
-            arr[i] = temp;
+            // int temp = arr[min];
+            // arr[min] = arr[i];
+            // arr[i] = temp;
+            swap(arr[min], arr[i]);
         }
     }
 
