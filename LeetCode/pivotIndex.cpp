@@ -1,8 +1,8 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-int main(){
-    int arr[] = {1,7,3,6,5,6};
+int check(){
+    int arr[] = {1,7,3,5,1,6};
     int size = sizeof(arr)/sizeof(int);
     int total = 0;
     for(int i=0; i<size; i++){
@@ -11,6 +11,14 @@ int main(){
     int leftsum = 0;
     for(int i=0; i<size; i++){
         int rightsum = total-leftsum-arr[i];
-        if(right)
+        if(rightsum==leftsum){
+            return i;
+        }
+        leftsum+=arr[i];
     }
+    return -1;
+}
+int main(){
+    int x = check();
+    cout<<x;
 }
