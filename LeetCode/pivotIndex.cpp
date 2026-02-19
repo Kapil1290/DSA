@@ -11,5 +11,6 @@ int main(){
     int leftsum = 0;
     for(int i=0; i<size; i++){
         int rightsum = total-leftsum-arr[i];
+        if(right)
     }
 }
