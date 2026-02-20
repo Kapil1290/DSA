@@ -14,7 +14,8 @@ int main(){
             prefix[i]=arr[i-1]*prefix[i-1];
         }
 
-        for(int i=size-1; i>=0; i--){
+        //for suffix--
+        for(int i=size-1; i>0; i--){
             suffix[i-1]=arr[i]*suffix[i];
         }
 
