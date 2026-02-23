@@ -5,7 +5,7 @@ int main(){
     int size = sizeof(arr)/sizeof(int);
    
     int suffix[size];
-        int prefix[size];
+        int prefix[size];        // que. to submit later
         suffix[size-1] = 1;
         prefix[0] = 1;
 
