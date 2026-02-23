@@ -22,11 +22,11 @@ int main(){
 
     // a.insert(a.begin(),4);  // begin value is 0
 
-    reverse(a.begin(),a.end());
+    reverse(a.begin(),a.end());  // end is not sharp
 
     cout<<endl;
 
-    sort(a.begin(),a.end());
+    // sort(a.begin(),a.end());
     // printing of elements
     for(int i=0; i<a.size(); i++){
         cout<<a.at(i)<<" ";
