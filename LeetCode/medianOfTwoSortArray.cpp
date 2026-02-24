@@ -9,5 +9,11 @@ int main(){
     b.push_back(3);
     b.push_back(4);
 
-    
+    for(int i=0; i<b.size(); i++){
+        a.push_back(b[i]);
+    }
+
+    for(int i=0; i<a.size(); i++){
+        cout<<a.at(i)<<endl;
+    }
 }
