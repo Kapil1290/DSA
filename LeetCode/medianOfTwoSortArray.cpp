@@ -1,7 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<algorithm>
-#include<math>
+#include<cmath>
 using namespace std;
 int main(){
     vector<int> a;
@@ -23,13 +23,17 @@ int main(){
     if(a.size()%2==0){
         int idx = a.size()/2;
         double res = (a[idx]+a[idx-1])/2;
-        return res;
+        cout<<res; return;
     }else{
         int idx = ceil(a.size()/2);
         double res = a[idx];
-        return res;
+        cout<<res;
+        return;
     }
 
+    for(int i=0; i<a.size(); i++){
+        cout<<a.at(i)<<endl;
+    }
 
     
 }
