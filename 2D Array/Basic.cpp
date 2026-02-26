@@ -14,4 +14,10 @@ int main() {
     // for(int i=0; i<arr.size(); i++){
     //     for(int j=0; j<arr[0].)
     // }
+
+    // vector<vector<int>> a;
+    // a.push_back({3,2,3});
+    // for(int i=0; i<a.size(); i++){
+    //     cout<<a[i];
+    // }
 }
