@@ -8,4 +8,6 @@ int main(){
         res = res/i+1;
     }
     cout<<res;
+
+    return 0;
 }
