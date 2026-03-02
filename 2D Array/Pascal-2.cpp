@@ -11,7 +11,12 @@ int ncr(int n, int r){
 }
 int main(){
     int row = 5;
+    // for(int i=1; i<=row; i++){
+    //     cout<<ncr(row-1,i-1)<<endl;
+    // }
+
+    int res = 1;
     for(int i=1; i<=row; i++){
-        cout<<ncr(row-1,i-1)<<endl;
+        res = res * ()
     }
 }
