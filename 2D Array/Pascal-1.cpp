@@ -1,13 +1,14 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n = 5, r = 3;
+    int n = 4, r = 2;
     int res=1;
     for(int i=0; i<r; i++){
         res = res*(n-i);
         res = res/(i+1);
+        
     }
-    cout<<res;
+    cout<<res<<endl;
 
     return 0;
 }
