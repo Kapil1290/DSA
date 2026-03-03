@@ -13,4 +13,8 @@ int main(){
 
     sort(a.begin(),a.end());
 
+    for(int i=0; i<a.size(); i++){
+        cout<<a[i]<<" ";
+    }
+
 }
