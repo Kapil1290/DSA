@@ -1,46 +1,68 @@
 #include<iostream>
+#include<cmath>
 #include<vector>
 using namespace std;
 int main() {
-	vector<int> a;
-	int n; 
-	cin>>n;
-	int temp;
-	for(int i=0; i<n; i++){
-		cin>>temp;
-		a.push_back(temp);
-	}
-	int n1;
-	cin>>n1;
-	vector<int> a1;
-	for(int i=0; i<n1; i++){
-		cin>>temp;
-		a1.push_back(temp);
-	}
-
+	// vector<int> a;
+	// int n; 
+	// cin>>n;
+	// int temp;
+	// for(int i=0; i<n; i++){
+	// 	cin>>temp;
+	// 	a.push_back(temp);
+	// }
+	// int n1;
+	// cin>>n1;
+	// vector<int> a1;
+	// for(int i=0; i<n1; i++){
+	// 	cin>>temp;
+	// 	a1.push_back(temp);
+	// }
+    int n=5;
+    vector<int> a;
+    a.push_back(1);
+    a.push_back(2);
+    a.push_back(1);
+    int n1=2;
+    vector<int> a1;
+    a1.push_back(1);
+    a1.push_back(0);
+    // cout<<a1[0];
+    // cout<<a1[1];
+    vector<int> newarray;
+    // newarray.push_back(1);
+    // newarray.push_back(2);
+    // newarray.push_back(3);
+    // newarray.push_back(4);
+    // newarray.push_back(5);
 	for(int i=0; i<a1.size(); i++){
 		int t1=a1[i];
 		if(t1!=0){
 			for(int i=0; i<a.size(); i++){
+                int x;
 				if(i==0){
-					a[i] = a[i]+a[a.size()-1];
-                    cout<<a[i]<<endl;
+                    int end=a.size()-1;
+					x = a[i]+a[end];
+                    newarray.push_back(x);
 				}else{
-					a[i] = a[i]+a[i-1];
-                    cout<<a[i]<<endl;
+					x = a[i]+a[i-1];
+                    newarray.push_back(x);
 				}
 			}
 		}else{
 			for(int i=0; i<a.size(); i++){
-				a[i] = a[i] + a[i];
-                cout<<a[i]<<endl;
+				int t = newarray[i] + newarray[i];
+                newarray[i] = t;
 			}
 		}
 	}
-
-	for(int i=0; i<a.size(); i++){
-		cout<<a[i]<<" ";
+    // cout<<endl;
+    int sum=0;
+	for(int i=0; i<newarray.size(); i++){
+		sum += newarray[i];
 	}
+    int val = pow(10,9)+7;
+    cout<<sum%val;
 
 
 }	
