@@ -18,12 +18,13 @@ int main() {
 		a1.push_back(temp);
 	}
 
-	for(int i=0; i<n1; i++){
+	for(int i=0; i<a1.size(); i++){
 		int t1=a1[i];
 		if(t1!=0){
 			for(int i=0; i<a.size(); i++){
 				if(i==0){
 					a[i] = a[i]+a[a.size()-1];
+                    cout<<a[i]<<endl;
 				}else{
 					a[i] = a[i]+a[i-1];
 				}
