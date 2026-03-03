@@ -27,11 +27,13 @@ int main() {
                     cout<<a[i]<<endl;
 				}else{
 					a[i] = a[i]+a[i-1];
+                    cout<<a[i]<<endl;
 				}
 			}
 		}else{
 			for(int i=0; i<a.size(); i++){
 				a[i] = a[i] + a[i];
+                cout<<a[i]<<endl;
 			}
 		}
 	}
