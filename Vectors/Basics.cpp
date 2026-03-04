@@ -5,6 +5,7 @@ using namespace std;
 
 int main(){
     vector<int> a;
+    vector<int> b(2,9);   // To initialize the array with element with 9
     int val,cap;
     cout<<"Give size of array:- ";
     cin>>cap;
@@ -32,7 +33,14 @@ int main(){
         cout<<a.at(i)<<" ";
     }
 
-
-    //solve leetcode 1492 
+    // cin>>a[0];
+    // cin>>a[1];
+    cout<<a.at(0);
+    cout<<a.at(1);
+    
 }
+
+
+
+
     
