@@ -80,12 +80,18 @@ int main() {
 	}
 	b[0] = a[n-1];
 	int check[] = {1,0};
-	if(check[flag] == 0){
-		for(int i=0; i<x-1; i++){
-		a[i] = b[i]+b[i+1];
-	}else{
-		
-	}
+	int j=1;
+	int one = 1;
+	int temp;
+	for(int i=0; i<n && j<=one;  i++){
+		if(i==0){
+			temp = a[i];
+			a[i] = a[n-1]+temp;
+
+		}else if(i>0){
+			temp = a[i];
+			a[i] = temp + a[i]
+		}
 	}
 
 	for(int i=0; i<x-1; i++){
