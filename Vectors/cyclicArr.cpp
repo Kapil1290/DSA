@@ -28,14 +28,9 @@ int main() {
     vector<int> a1;
     a1.push_back(1);
     a1.push_back(0);
-    // cout<<a1[0];
-    // cout<<a1[1];
+
     vector<int> newarray;
-    // newarray.push_back(1);
-    // newarray.push_back(2);
-    // newarray.push_back(3);
-    // newarray.push_back(4);
-    // newarray.push_back(5);
+
 	for(int i=0; i<a1.size(); i++){
 		int t1=a1[i];
 		if(t1!=0){
@@ -49,21 +44,22 @@ int main() {
 					x = a[i]+a[i-1];
                     newarray.push_back(x);
 				}
+				cout<<newarray[i]<<" ";
 			}
 		}else{
 			for(int i=0; i<a.size(); i++){
 				int t = newarray[i] + newarray[i];
                 newarray[i] = t;
+				cout<<newarray[i]<<" ";
 			}
 		}
 	}
-    // cout<<endl;
+    cout<<endl;
     int sum=0;
 	for(int i=0; i<newarray.size(); i++){
 		sum += newarray[i];
 	}
     int val = pow(10,9)+7;
     cout<<sum%val;
-
 
 }	
