@@ -25,6 +25,7 @@ int main() {
     a.push_back(3);
 	a.push_back(4);
 	a.push_back(5);
+	
     int n1=2;
     vector<int> a1;
     a1.push_back(1);
