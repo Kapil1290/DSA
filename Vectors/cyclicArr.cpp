@@ -66,7 +66,7 @@ int main() {
 	// for(int i=0; i<n; i++){
 	// 	int a = (n+i)%n;
 	// }
-
+	int flag=0;
 	int n; 
 	cin>>n;
 	int a[n];
@@ -78,9 +78,17 @@ int main() {
 	for(int i=0; i<n; i++){
 		b[i+1] = a[i];
 	}
-	b[0] = a[x-1];
+	b[0] = a[n-1];
+	int check[] = {1,0};
+	if(check[flag] == 0){
+		for(int i=0; i<x-1; i++){
+		a[i] = b[i]+b[i+1];
+	}else{
+		
+	}
+	}
 
-	for(int i=0; i<x; i++){
-		cout<<b[i]<<" ";
+	for(int i=0; i<x-1; i++){
+		cout<<a[i]<<" ";
 	}
 }	
