@@ -62,4 +62,9 @@ int main() {
     int val = pow(10,9)+7;
     cout<<sum%val;
 
+
+	for(int i=0; i<n; i++){
+		int a = (n+i)%n;
+		b[a] = 
+	}
 }	
