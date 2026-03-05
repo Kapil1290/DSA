@@ -84,7 +84,6 @@ int main() {
     int n = arr.size();
     bool found = false;
 
-    // 2. Sort the array (Essential for Two-Pointer logic)
     sort(arr.begin(), arr.end());
 
     // 3. The O(n^2) Logic
