@@ -59,11 +59,9 @@ int main() {
                 cout << "Triplet found: " << a[i] << ", "<< a[left] << ", " << a[right] << endl;
             } 
             else if (currentSum < target) {
-                // Sum is too small, move left pointer to a larger value
                 left++;
             } 
             else {
-                // Sum is too large, move right pointer to a smaller value
                 right--;
             }
         }
