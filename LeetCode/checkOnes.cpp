@@ -1,3 +1,3 @@
 #include<iostream>
-#include<vector>
-using n
+// #include<vector>
+// using n
