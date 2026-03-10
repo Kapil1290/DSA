@@ -7,5 +7,7 @@ int main(){
         {5,6,7,8},
         {9,10,11,12}
     };
-    int 
+    int m = sizeof(arr)/sizeof(int);
+    int n = sizeof(arr)/sizeof(int)*sizeof(int);
+    cout<<m<<" "<<n;
 }
