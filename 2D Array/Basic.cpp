@@ -4,10 +4,10 @@ using namespace std;
 int main() {
 
     int arr[][4] = {
-    {1,2,3,4},{12,12,3,4},{45,33,66,7},{1,21,22,13}
+    {1,2,3,4},{12,12,3,4},{45,33,66,7},{1,21,22,13},{14,15,16,17}
     };
 
-    int size = sizeof(arr[0])/sizeof(int)*sizeof(int);
+    int size = sizeof(arr);
     // int size = sizeof(arr);
     cout<<size;
     int arr1[2][3] = {1,2,3,4,5,6};
