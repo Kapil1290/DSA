@@ -8,6 +8,6 @@ int main(){
         {9,10,11,12}
     };
     int m = sizeof(arr)/sizeof(int);
-    int n = sizeof(arr)/sizeof(int)*sizeof(int);
+    int n = sizeof(arr[0])/sizeof(int)*sizeof(int);
     cout<<m<<" "<<n;
 }
