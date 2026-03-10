@@ -1,4 +1,5 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 int main(){
     int arr[][4] = {
@@ -6,7 +7,5 @@ int main(){
         {5,6,7,8},
         {9,10,11,12}
     };
-
-    int m = arr.size();
-    int n = arr[0].size();
+    int arr
 }
