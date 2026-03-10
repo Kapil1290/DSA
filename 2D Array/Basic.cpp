@@ -7,8 +7,9 @@ int main() {
     {1,2,3,4},{12,12,3,4},{45,33,66,7},{1,21,22,13}
     };
 
-    int size1 = sizeof(arr)/(sizeof(int)*sizeof(int));
-    cout<<size1;
+    int size = sizeof(arr[0])/sizeof(int)*sizeof(int);
+    // int size = sizeof(arr);
+    cout<<size;
     int arr1[2][3] = {1,2,3,4,5,6};
 
     // for(int i=0; i<arr.size(); i++){
