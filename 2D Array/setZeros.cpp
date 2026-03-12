@@ -15,16 +15,16 @@ int main(){
                 int t1 = 0;
                 int t2 = 0;
                 if(matrix[i][j]==0){
-                    
-
                     while(t1<m && t2<n){
                         matrix[t1][j] = 0;
                         matrix[i][t2] = 0;
                         t1++;
                         t2++;
                     }
+                    
                 }
             }
+            break;
         }
 
         for(int i=0; i<m; i++){
