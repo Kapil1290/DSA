@@ -14,25 +14,22 @@ int main(){
     int m = sizeof(matrix)/sizeof(matrix[0]);
     int n = sizeof(matrix[0])/sizeof(int);
 
-     for(int i=0; i<m; i++){
-        
-            for(int j=0; j<n; j++){
-                int t1 = 0;
-                int t2 = 0;
-                if(matrix[i][j]==0){
-                    
-                }
+    int row[m] = {0};
+    int row[n] = {0};
+
+    for(int i=0; i<m; i++){
+        for(int j=0; j<n; j++){
+            if(matrix[i][j]==0){
                 
             }
-            // break;
         }
-
-        for(int i=0; i<m; i++){
-            for(int j=0; j<n; j++){
-                cout<<matrix[i][j]<<" ";
-            }
-            cout<<endl;
-        }
+    }
     
+
+    for(int i=0; i<m; i++){
+        for(int j=0; j<n; j++){
+            
+        }
+    }
 }    
     
