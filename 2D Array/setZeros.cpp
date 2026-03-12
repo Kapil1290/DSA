@@ -5,6 +5,10 @@ using namespace std;
 
 
 int main(){
+
+    // Approach -->  Using two 2d extra array to mark
+
+    
     int matrix[][3] = {
         {0,1,1},
         {1,1,1},
