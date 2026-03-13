@@ -7,4 +7,7 @@ int main(){
 
     cout<<str[1];
     cout<<str.length();
+
+    int s = 'a';
+    cout<<s;
 }
