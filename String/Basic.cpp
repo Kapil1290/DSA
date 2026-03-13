@@ -6,4 +6,5 @@ int main(){
     cout<<str;
 
     cout<<str[1];
+    cout<<str.length();
 }
