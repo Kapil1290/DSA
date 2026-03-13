@@ -12,7 +12,7 @@ int main(){
     cout<<s;
 
     string str1 = "kapil";
-    string str2 = "raghav";
+    string str2 = "kapha";
 
     cout<<str1.compare(str2);
 }
