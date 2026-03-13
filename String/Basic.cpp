@@ -11,4 +11,8 @@ int main(){
     int s = 'R';
     cout<<s;
 
+    string str1 = "kapil";
+    string str2 = "raghav";
+
+    cout<<str1.compare(str2);
 }
