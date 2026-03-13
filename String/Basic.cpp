@@ -4,4 +4,6 @@ int main(){
     string str;
     cin>>str;
     cout<<str;
+
+    cout<<str[1];
 }
