@@ -6,6 +6,12 @@ int main(){
     string res = "";
     for(int i=str.length(); i>=0; i++){
         if(str[i]==' ' and !t.empty()){
+            continue;
+        }
+        if(str[i]!=' '){
+            t.push_back(str[i]);
+        }
+        if(str[i]==' ' and t.empty()){
             
         }
     }
