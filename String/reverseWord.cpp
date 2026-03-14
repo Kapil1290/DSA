@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 using namespace std;
 int main(){
     string str = " the fox make it easy  ";
@@ -12,7 +13,10 @@ int main(){
             t.push_back(str[i]);
         }
         if(str[i]==' ' and t.empty()){
-            
+            reverse(t.begin(),t.end());
+            res.append(t);
+            res.push_back(' ');
+            t.clear();
         }
     }
 }
