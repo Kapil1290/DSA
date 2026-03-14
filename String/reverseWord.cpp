@@ -16,6 +16,7 @@ int main(){
         if(str[i]==' ' && (t.empty())){
             reverse(t.begin(),t.end());
             res.append(t);
+            cout<<res;
             t.clear();
             res.push_back(' ');
             
@@ -26,6 +27,4 @@ int main(){
         cout<<res;
         res.pop_back();
     }
-
-    cout<<res;
 }
