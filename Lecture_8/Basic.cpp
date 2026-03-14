@@ -62,23 +62,40 @@ int main() {
 
 
 
-int arr[5];
+// int arr[5];
 
-int n;
-cin>>n;
-int pos=1;
-while(n!=0){
-   int rem = n%10;
-   arr[rem-1]=pos;
-   n=n/10;
-   pos++;
-}
+// int n;
+// cin>>n;
+// int pos=1;
+// while(n!=0){
+//    int rem = n%10;
+//    arr[rem-1]=pos;
+//    n=n/10;
+//    pos++;
+// }
 
-for(int i=4; i>=0; i--){
-   cout<<arr[i];
-}
+// for(int i=4; i>=0; i--){
+//    cout<<arr[i];
+// }
 
 
    // float a = 0.5555555*(0-32);
    // cout<<a;
+
+   int arr[] = {0,1,0,3,12};
+
+   int p1 = 0,p2 = 0;
+   int size = sizeof(arr)/sizeof(int);
+   while(p1<size && p2<size){
+      if(arr[p1]==0 && arr[p2]!=0){
+         swap(arr[p1],arr[p2]);
+          p1++; p2++;
+      }else{
+         p2++;
+      }
+   }
+
+   for(int i=0; i<size; i++){
+      cout<<arr[i]<<" ";
+   }
 }
