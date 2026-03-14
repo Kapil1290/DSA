@@ -4,8 +4,8 @@
 using namespace std;
 int main(){
     string str = " the fox make it easy  ";
-    string t;
-    string res;
+    string t="";
+    string res="";
     for(int i=str.length()-1; i>=0; i--){
         if(str[i]==' ' && !(t.empty())){
             continue;
@@ -16,8 +16,9 @@ int main(){
         if(str[i]==' ' && (t.empty())){
             reverse(t.begin(),t.end());
             res.append(t);
-            res.append(" ");
             t.clear();
+            res.push_back(' ');
+            
         }
     }
     cout<<res;
