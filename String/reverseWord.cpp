@@ -19,4 +19,10 @@ int main(){
             t.clear();
         }
     }
+
+    if(res[res.length()-1] == ' '){
+        res.pop_back();
+    }
+
+    cout<<res;
 }
