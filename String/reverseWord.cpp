@@ -20,7 +20,7 @@ int main(){
             t.clear();
         }
     }
-
+    cout<<res;
     if(res[res.length()-1] == ' '){
         cout<<res;
         res.pop_back();
