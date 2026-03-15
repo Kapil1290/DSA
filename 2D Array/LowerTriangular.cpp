@@ -7,5 +7,6 @@ int main(){
     cin>>r;
     int c;
     cin>>c;
-     
+    
+    vector<vector<int>> arr(r, )
 }
