@@ -52,5 +52,10 @@ int main(){
                 }
             }
         }
+
+        vector<int> x(4,0);
+
+        x.push_back(0);
+
     
 }
