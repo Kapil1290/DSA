@@ -8,5 +8,6 @@ int main(){
     int c;
     cin>>c;
     
-    vector<vector<int>> arr(r, )
+    vector<vector<int>> arr(r, vector<int>(c));
+    
 }
