@@ -17,4 +17,10 @@ int main(){
         }
     }
 
+    int l=0, h=mat.size()-1;
+    for(int i=0; i<mat.size(); i++){
+        
+        while()
+    }
+
 }
