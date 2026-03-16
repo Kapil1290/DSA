@@ -9,6 +9,11 @@ int main(){
         {7,8,9}
     };
 
-    
+    for(int i=0; i<mat.size(); i++){
+        int arr[mat[0].size()];
+        for(int j=0; j<mat[0].size(); j++){
+            
+        }
+    }
 
 }
