@@ -17,10 +17,22 @@ int main(){
         }
     }
 
-    int l=0, h=mat.size()-1;
+    int j=0, h=mat.size()-1;
     for(int i=0; i<mat.size(); i++){
         
-        while()
+        while(j<h){
+            int temp = mat[i][j];
+            mat[i][j] = mat[i][h];
+            mat[i][h] = temp;
+            j++; h--;
+        }
+    }
+
+    for(int i=0; i<mat.size(); i++){
+        for(int j=0; j<mat.size(); j++){
+            cout<<mat[i][j]<<" ";
+        }
+        cout<<endl;
     }
 
 }
