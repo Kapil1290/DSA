@@ -17,9 +17,9 @@ int main(){
         }
     }
 
-    int j=0, h=mat.size()-1;
+    
     for(int i=0; i<mat.size(); i++){
-        
+        int j=0, h=mat.size()-1;
         while(j<h){
             int temp = mat[i][j];
             mat[i][j] = mat[i][h];
