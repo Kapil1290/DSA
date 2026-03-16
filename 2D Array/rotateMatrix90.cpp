@@ -10,8 +10,10 @@ int main(){
     };
 
     for(int i=0; i<mat.size(); i++){
-        for(int j=0; j<mat.size(); j++){
-            
+        for(int j=i; j<mat.size(); j++){
+            int temp = mat[i][j];
+            mat[i][j] = mat[j][i];
+            mat[j][i] = temp;
         }
     }
 
