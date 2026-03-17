@@ -40,13 +40,13 @@ int main() {
 		}
 	}
 
-    for(int i=0; i<f1.size(); i++){
-        cout<<f1[i]<<endl;
-    }
+    // for(int i=0; i<f1.size(); i++){
+    //     cout<<f1[i]<<endl;
+    // }
 
-    for(int i=0; i<f2.size(); i++){
-        cout<<f2[i]<<endl;
-    }
+    // for(int i=0; i<f2.size(); i++){
+    //     cout<<f2[i]<<endl;
+    // }
 
 	int val1=0;
 	int idx1;
@@ -56,7 +56,7 @@ int main() {
 			idx1=i;
 		}
 	}
-    cout<<val1<<endl<<idx1<<endl;
+    // cout<<val1<<endl<<idx1<<endl;
 
 	int val2=0;
 	int idx2;
@@ -70,15 +70,15 @@ int main() {
 
 
     
-    cout<<val2<<endl<<idx2;
+    // cout<<val2<<endl<<idx2;
 
-	// if(val1>val2){
-	// 	char c = 'a'-idx1;
-	// 	cout<<c;
-	// }else{
-	// 	char c = 'A'-idx2;
-	// 	cout<<c;
-	// }
+	if(val1>val2){
+		char c = 97+idx1;
+		cout<<c;
+	}else{
+		char c =65+idx2;
+		cout<<c;
+	}
 
 	// if()
 	// sort(f1.begin(),f1.end());
