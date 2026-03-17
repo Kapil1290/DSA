@@ -69,8 +69,8 @@ int main() {
 	}
 
 
-    cout<<val1<<endl<<idx1<<endl;
-    cout<<val2<<endl<<idx2;
+    // cout<<val1<<endl<<idx1<<endl;
+    // cout<<val2<<endl<<idx2;
 
 	// if(val1>val2){
 	// 	char c = 'a'-idx1;
