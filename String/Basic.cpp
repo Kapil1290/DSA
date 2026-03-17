@@ -56,21 +56,21 @@ int main() {
 			idx1=i;
 		}
 	}
-
+    cout<<val1<<endl<<idx1<<endl;
 
 	int val2=0;
 	int idx2;
 	for(int i=0; i<f2.size(); i++){
 		if(val2<f2[i]){
-			val2=f1[i];
+			val2=f2[i];
 			idx2=i;
 
 		}
 	}
 
 
-    // cout<<val1<<endl<<idx1<<endl;
-    // cout<<val2<<endl<<idx2;
+    
+    cout<<val2<<endl<<idx2;
 
 	// if(val1>val2){
 	// 	char c = 'a'-idx1;

@@ -1,1 +1,1 @@
-!t.empty()
+dl<<idx1<<endl;
