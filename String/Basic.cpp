@@ -31,7 +31,7 @@ int main() {
 	cin>>s;
 	vector<int> f1(26,0);
 	vector<int> f2(26,0);
-
+    
 	for(int i=0; i<s.size(); i++){
 		if(s[i]>='a' and s[i]<='z'){
 			f1[s[i]-'a']++;
