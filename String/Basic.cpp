@@ -31,7 +31,7 @@ int main() {
 	cin>>s;
 	vector<int> f1(26,0);
 	vector<int> f2(26,0);
-    
+
 	for(int i=0; i<s.size(); i++){
 		if(s[i]>='a' and s[i]<='z'){
 			f1[s[i]-'a']++;
@@ -57,6 +57,7 @@ int main() {
 		}
 	}
 
+
 	int val2=0;
 	int idx2;
 	for(int i=0; i<f2.size(); i++){
@@ -66,6 +67,10 @@ int main() {
 
 		}
 	}
+
+
+    cout<<val1<<endl<<idx1<<endl;
+    cout<<val2<<endl<<idx2;
 
 	// if(val1>val2){
 	// 	char c = 'a'-idx1;
