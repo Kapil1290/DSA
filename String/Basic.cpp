@@ -45,7 +45,7 @@ int main() {
     }
 
     for(int i=0; i<f2.size(); i++){
-        cout<<f1[i]<<endl;
+        cout<<f2[i]<<endl;
     }
 
 	int val1=0;
@@ -67,13 +67,13 @@ int main() {
 		}
 	}
 
-	if(val1>val2){
-		char c = 'a'-idx1;
-		cout<<c;
-	}else{
-		char c = 'A'-idx2;
-		cout<<c;
-	}
+	// if(val1>val2){
+	// 	char c = 'a'-idx1;
+	// 	cout<<c;
+	// }else{
+	// 	char c = 'A'-idx2;
+	// 	cout<<c;
+	// }
 
 	// if()
 	// sort(f1.begin(),f1.end());
