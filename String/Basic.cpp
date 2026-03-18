@@ -75,3 +75,30 @@
 // 	return 0;
 // }
 
+
+#include <iostream>
+using namespace std;
+int main(){
+    string s;
+    cin>>s;
+    int x=0;
+    char c; int count=0;
+    for(int i=0; i<s.length(); i++){
+        if(x==0){
+            c=s[i];
+            cout<<c;
+            x=1;
+        }
+        if(c==s[i]){
+            count++;
+        }
+
+        else{
+            cout<<count;
+            count=1;
+            x=0;
+        }
+    }
+
+    return 0;
+}
