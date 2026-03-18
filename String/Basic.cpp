@@ -76,30 +76,33 @@
 // }
 
 
-#include <iostream>
-using namespace std;
-int main(){
-    string s="aabbcsdda";
-    int x=0;
-    char c; int count=0;
-    for(int i=0; i<s.length(); i++){
-        if(x==0){
-            c=s[i];
-            cout<<c;
-            x=1;
-        }
-        if(c==s[i]){
-            count++;
-        }
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     string s="aabbcsdda";
+//     int x=0;
+//     char c; int count=0;
+//     for(int i=0; i<s.length(); i++){
+//         if(x==0){
+//             c=s[i];
+//             cout<<c;
+//             x=1;
+//         }
+//         if(c==s[i]){
+//             count++;
+//         }
 
-        if(c!=s[i+1]){
-            if(count>1){
-				cout<<count;
-			}
-            count=0;
-            x=0;
-        }
-    }
+//         if(c!=s[i+1]){
+//             if(count>1){
+// 				cout<<count;
+// 			}
+//             count=0;
+//             x=0;
+//         }
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
+
+
+
