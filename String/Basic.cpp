@@ -79,8 +79,7 @@
 #include <iostream>
 using namespace std;
 int main(){
-    string s;
-    cin>>s;
+    string s="aabbccsdda";
     int x=0;
     char c; int count=0;
     for(int i=0; i<s.length(); i++){
