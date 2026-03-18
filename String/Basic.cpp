@@ -40,9 +40,7 @@ int main() {
 		}
 	}
 
-    // for(int i=0; i<f1.size(); i++){
-    //     cout<<f1[i]<<endl;
-    // }
+   
 
     // for(int i=0; i<f2.size(); i++){
     //     cout<<f2[i]<<endl;
