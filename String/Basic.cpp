@@ -80,12 +80,5 @@ int main() {
 		cout<<c;
 	}
 
-	// if()
-	// sort(f1.begin(),f1.end());
-	// sort(f2.begin(),f2.end());
-	// int m1 = f1[f1.size()-1];
-	// int m2 = f2[f2.size()-1];
-	// cout<<x;
-	// cout<<y;
 	return 0;
 }
