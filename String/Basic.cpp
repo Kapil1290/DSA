@@ -92,9 +92,9 @@ int main(){
             count++;
         }
 
-        else{
+        if(c!=s[i+1]){
             cout<<count;
-            count=1;
+            count=0;
             x=0;
         }
     }
