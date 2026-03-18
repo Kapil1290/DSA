@@ -43,8 +43,7 @@ int main() {
    
 
     // for(int i=0; i<f2.size(); i++){
-    //     cout<<f2[i]<<endl;
-    // }
+  
 
 	int val1=0;
 	int idx1;
