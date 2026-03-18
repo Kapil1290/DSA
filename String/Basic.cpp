@@ -93,7 +93,9 @@ int main(){
         }
 
         if(c!=s[i+1]){
-            cout<<count;
+            if(count>1){
+				cout<<count;
+			}
             count=0;
             x=0;
         }
