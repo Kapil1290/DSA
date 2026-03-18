@@ -40,11 +40,6 @@ int main() {
 		}
 	}
 
-   
-
-    // for(int i=0; i<f2.size(); i++){
-  
-
 	int val1=0;
 	int idx1;
 	for(int i=0; i<f1.size(); i++){
