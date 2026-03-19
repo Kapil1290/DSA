@@ -22,6 +22,7 @@ int main(){
         {7,8,9}
     };
 
-    int 
+    int row = arr.size();
+    int col
 
 }
