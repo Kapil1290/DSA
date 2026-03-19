@@ -31,8 +31,8 @@ int main(){
     bool up = true;
 
     while(r < row and c < col){
-        if(up){
-            while(r>0 and c<col-1){
+        if(up==true){
+            while(row>0 and c<col-1){
                 cout<<arr[r][c]<<" ";
                 r--;
                 c++;
@@ -43,14 +43,22 @@ int main(){
             }else{
                 c++;
             }
+
+            
         }else{
-            while(r > 0 and c<col-1){
+            while(r < row-1 and c<col-1){
+                cout<<arr[r][c]<<" ";
                 r++;
                 c--;
             }
 
-            if()
+            if(r==row-1){
+                c++;
+            }else{
+                r++;
+            }
         }
+        up=!up;
     }
 
 
