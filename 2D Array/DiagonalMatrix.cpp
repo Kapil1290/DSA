@@ -26,18 +26,16 @@ int main(){
     int col = arr[0].size();
 
     int r=0; 
-    int c=col-1;
+    int c=0;
 
     bool up = true;
 
     while(r < row and c < col){
         if(up){
-            while(r<row and c<col){
+            while(r>row and c<col-1){
                 cout<<arr[r][c]<<" ";
                 r--;
                 c++;
-
-                if()
             }
         }
     }
