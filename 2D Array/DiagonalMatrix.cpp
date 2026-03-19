@@ -32,11 +32,24 @@ int main(){
 
     while(r < row and c < col){
         if(up){
-            while(r>row and c<col-1){
+            while(r>0 and c<col-1){
                 cout<<arr[r][c]<<" ";
                 r--;
                 c++;
             }
+
+            if(c==col-1){
+                r++;
+            }else{
+                c++;
+            }
+        }else{
+            while(r > 0 and c<col-1){
+                r++;
+                c--;
+            }
+
+            if()
         }
     }
 
