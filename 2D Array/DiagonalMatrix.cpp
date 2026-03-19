@@ -27,6 +27,20 @@ int main(){
 
     int r=0; 
     int c=col-1;
-    
+
+    bool up = true;
+
+    while(r < row and c < col){
+        if(up){
+            while(r<row and c<col){
+                cout<<arr[r][c]<<" ";
+                r--;
+                c++;
+
+                if()
+            }
+        }
+    }
+
 
 }
