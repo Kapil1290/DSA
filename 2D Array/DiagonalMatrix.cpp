@@ -23,6 +23,10 @@ int main(){
     };
 
     int row = arr.size();
-    int col
+    int col = arr[0].size();
+
+    int r=0; 
+    int c=col-1;
+    
 
 }
