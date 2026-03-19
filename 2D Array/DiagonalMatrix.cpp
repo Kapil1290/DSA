@@ -32,12 +32,12 @@ int main(){
 
     while(r < row and c < col){
         if(up==true){
-            while(row>0 and c<col-1){
+            while(r>0 and c<col-1){
                 cout<<arr[r][c]<<" ";
                 r--;
                 c++;
             }
-
+            cout<<arr[r][c]<<" ";
             if(c==col-1){
                 r++;
             }else{
@@ -46,12 +46,12 @@ int main(){
 
             
         }else{
-            while(r < row-1 and c<col-1){
+            while(r<row-1 and c>0){
                 cout<<arr[r][c]<<" ";
                 r++;
                 c--;
             }
-
+            cout<<arr[r][c]<<" ";
             if(r==row-1){
                 c++;
             }else{
