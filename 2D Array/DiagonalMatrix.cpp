@@ -10,4 +10,5 @@ int main(){
     int m = sizeof(arr)/(sizeof(int)*sizeof(int));
     int n = sizeof(arr[0])/sizeof(int);
     cout<<m<<" "<<n;
+    
 }
