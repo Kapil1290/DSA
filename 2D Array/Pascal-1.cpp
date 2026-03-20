@@ -2,8 +2,8 @@
 using namespace std;
 int main(){
     int n,r;
-    cin>>n;
-    cin>>r;
+    n=4;
+    r=3;
     int res=1;
     for(int i=0; i<r; i++){
         res = res*(n-i);
