@@ -6,7 +6,6 @@ int main(){
     for(int i=0; i<r; i++){
         res = res*(n-i);
         res = res/(i+1);
-        
     }
     cout<<res<<endl;
 
