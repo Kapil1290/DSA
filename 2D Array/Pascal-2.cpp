@@ -10,7 +10,7 @@ using namespace std;
 //     return res;
 // }
 int main(){
-    int row = 6;
+    int row = 3;
 // 1st approach--- with function
 
     // for(int i=1; i<=row; i++){
