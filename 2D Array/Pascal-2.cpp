@@ -23,11 +23,11 @@ int main(){
 
     // 2nd approach---without function
 
-    int res = 1;
-    cout<<1<<" ";
-    for(int i=1; i<row; i++){
-        res = res * (row-i);
-        res = res/i;
-        cout<<res<<" ";
-    }
+    // int res = 1;
+    // cout<<1<<" ";
+    // for(int i=1; i<row; i++){
+    //     res = res * (row-i);
+    //     res = res/i;
+    //     cout<<res<<" ";
+    // }
 }
