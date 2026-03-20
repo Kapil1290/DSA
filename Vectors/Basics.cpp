@@ -41,24 +41,3 @@
 // }
 
 
-
-#include<iostream>
-#include<vector>
-#include<algorithm>
-using namespace std;
-
-int main(){
-
-    vector<int> arr = {1,2,3};
-    int x=0;
-    for(int i=0; i<arr.size(); i++){
-        x = 10*x + arr[i];
-    }
-    x=x+1;
-    for()
-}
-
-
-
-
-    
