@@ -10,7 +10,10 @@ using namespace std;
 //     return res;
 // }
 int main(){
-    int row = 3;
+    int row = 0;
+    if(row==0){
+        return 0;
+    }
 // 1st approach--- with function
 
     // for(int i=1; i<=row; i++){
