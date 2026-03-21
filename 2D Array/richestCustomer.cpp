@@ -17,7 +17,9 @@ int main(){
         }
         if(maxIncome<income){
             maxIncome=income;
-            richManIdx=
+            richManIdx=i;
         }
     }
+
+    cout<<""
 }
