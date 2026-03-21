@@ -9,6 +9,15 @@ int main(){
 
     int richManIdx=0;
     int income=0;
+    int maxIncome=0;
     for(int i=0; i<a.size(); i++){
+        income=0;
+        for(int j=0; j<a[0].size(); j++){
+            income += a[i][j];
+        }
+        if(maxIncome<income){
+            maxIncome=income;
+            richManIdx=
+        }
     }
 }
