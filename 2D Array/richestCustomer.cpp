@@ -4,7 +4,9 @@ using namespace std;
 
 int main(){
     vector<vector<int>> a  = {
-        {1,2,3,4},{2,3,4,4},{6,5,7,9}
+        {11,2,10,4},
+        {2,3,4,4},
+        {6,5,7,9}
     };
 
     int richManIdx=0;
@@ -21,5 +23,6 @@ int main(){
         }
     }
 
-    cout<<""
+    cout<<"Richest idx is:- "<<richManIdx+1<<endl;
+    cout<<"with amount:- "<<maxIncome;
 }
