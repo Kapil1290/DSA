@@ -5,7 +5,7 @@ using namespace std;
 int main(){
     vector<vector<int>> a  = {
         {11,2,10,4},
-        {2,3,4,4},
+        {2,3,41,4},
         {6,5,7,9}
     };
 
