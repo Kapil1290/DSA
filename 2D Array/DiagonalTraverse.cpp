@@ -74,7 +74,11 @@ int main(){
                 c++;
             }
             cout<<arr[r][c]<<" ";
-            if()
+            if(c==col-1){
+                r++;
+            }else{
+                
+            }
         }
     }
 
