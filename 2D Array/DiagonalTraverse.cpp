@@ -61,6 +61,9 @@ int main(){
 
     int row = arr.size();
     int col = arr[0].size();
-    
+    int r=0; 
+    int c=0;
+
+    bool up = true;
 
 }
