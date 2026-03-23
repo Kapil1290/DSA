@@ -59,5 +59,7 @@ int main(){
     //     up=!up;
     // }
 
+    int row = arr.size();
+    
 
 }
