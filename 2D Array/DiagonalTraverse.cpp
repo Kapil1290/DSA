@@ -66,4 +66,10 @@ int main(){
 
     bool up = true;
 
+    while(r < row and c < col){
+        if(up){
+            
+        }
+    }
+
 }
