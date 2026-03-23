@@ -43,8 +43,6 @@ int main(){
             }else{
                 c++;
             }
-
-            
         }else{
             while(r<row-1 and c>0){
                 cout<<arr[r][c]<<" ";
