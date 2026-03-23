@@ -60,6 +60,7 @@ int main(){
     // }
 
     int row = arr.size();
+    int col = arr[0].size();
     
 
 }
