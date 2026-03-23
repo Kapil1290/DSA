@@ -68,7 +68,13 @@ int main(){
 
     while(r < row and c < col){
         if(up){
-            
+            while(r > 0 and c < col-1){
+                cout<<arr[r][c]<<" ";
+                r--;
+                c++;
+            }
+            cout<<arr[r][c]<<" ";
+            if()
         }
     }
 
