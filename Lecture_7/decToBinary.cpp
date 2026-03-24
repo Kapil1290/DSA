@@ -27,7 +27,7 @@
 //     rem=0;
 // while(bin>0){
 //     int x = bin%10;
-    //     rem = rem*10+x;
+//     rem = rem*10+x;
     //     bin=bin/10;
     // }
     // cout<<rev(bin);
