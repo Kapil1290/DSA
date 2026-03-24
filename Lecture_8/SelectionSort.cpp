@@ -14,7 +14,7 @@ int main(){
             }
             // int temp = arr[min];
             // arr[min] = arr[i];
-            arr[i] = temp;
+            // arr[i] = temp;
             swap(arr[min], arr[i]);
         }
     }
