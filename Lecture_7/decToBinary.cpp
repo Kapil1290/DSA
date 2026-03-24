@@ -29,7 +29,7 @@
 //     int x = bin%10;
 //     rem = rem*10+x;
 //     bin=bin/10;
-    // }
+// }
     // cout<<rev(bin);
 // }
 
