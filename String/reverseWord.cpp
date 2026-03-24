@@ -3,7 +3,7 @@
 #include<string>
 using namespace std;
 int main(){
-    string str = "  the fox make it easy  ";
+    string str = "the fox make it easy  ";
     string t="";
     string res="";
 

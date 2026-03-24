@@ -77,9 +77,22 @@ int main(){
             if(c==col-1){
                 r++;
             }else{
-                
+                c++;
+            }
+        }else{
+            while(r < row-1 and c > 0){
+                cout<<arr[r][c]<<" ";
+                r++;
+                c--;
+            }
+            cout<<arr[r][c]<<" ";
+            if(r==row-1){
+                c++;
+            }else{
+                r++;
             }
         }
+        up=!up;
     }
 
 }

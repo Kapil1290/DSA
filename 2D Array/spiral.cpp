@@ -2,7 +2,10 @@
 using namespace std;
 int main(){
     int arr[][4] = {
-        {1,5,9,13}, {2,6,10,14}, {3,7,11,15}, {4,8,12,16}
+        {1,5,9,13}, 
+        {2,6,10,14}, 
+        {3,7,11,15}, 
+        {4,8,12,16}
     };
 
     int row = sizeof(arr)/(sizeof(int)*sizeof(int));
@@ -32,8 +35,37 @@ int main(){
     //     i++;
     // }
 
-    int left=0,right=col-1,top=0,bottom=row-1;
-    while(left<=right && top<=bottom){
+    // int left=0,right=col-1,top=0,bottom=row-1;
+    // while(left<=right && top<=bottom){
+    //     for(int i=left; i<=right; i++){
+    //         cout<<arr[top][i]<<" ";
+    //     }
+    //     top++;
+
+    //     for(int i=top; i<=bottom; i++){
+    //         cout<<arr[i][right]<<" ";
+    //     }
+    //     right--;
+
+    //     if(top<=bottom){
+    //         for(int i=right; i>=left; i--){
+    //             cout<<arr[bottom][i]<<" ";
+    //         }
+    //         bottom--;
+    //     }
+
+    //     if(left<=right){
+
+    //         for(int i=bottom; i>=top; i--){
+    //             cout<<arr[i][left]<<" ";
+    //         }
+    //         left++;
+    //     }
+    // }
+
+    int left=0, right=col-1, top=0, bottom=row-1;
+
+    while(left <= right and top <= bottom){
         for(int i=left; i<=right; i++){
             cout<<arr[top][i]<<" ";
         }
@@ -44,19 +76,19 @@ int main(){
         }
         right--;
 
-        if(top<=bottom){
+        if(top <= bottom){
             for(int i=right; i>=left; i--){
                 cout<<arr[bottom][i]<<" ";
             }
             bottom--;
         }
 
-        if(left<=right){
-
+        if(left <= right){
             for(int i=bottom; i>=top; i--){
                 cout<<arr[i][left]<<" ";
             }
             left++;
         }
+
     }
 }

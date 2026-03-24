@@ -1,1 +1,0 @@
-sizeof(int)*sizeof(int)
