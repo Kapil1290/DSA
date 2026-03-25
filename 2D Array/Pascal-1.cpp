@@ -48,7 +48,7 @@
 //     //         cout<<a[i][j]<<" ";
 //     //     }
 //     //     cout<<endl;
-//     // }
+    // }
 }
 
 #include<iostream>
