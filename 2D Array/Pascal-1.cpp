@@ -47,7 +47,7 @@
 //     //     for(int j=0; j<r; j++){
 //     //         cout<<a[i][j]<<" ";
 //     //     }
-//     //     cout<<endl;
+     //     cout<<endl;
     // }
 }
 
