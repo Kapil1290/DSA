@@ -25,7 +25,7 @@
 //     if(r==0){
 //         return 0;
 //     }
-//     a.push_back(vector<int>(1,1));
+    // a.push_back(vector<int>(1,1));
 //     cout<<1;
 //     cout<<endl;
 //     for(int i=1; i<r; i++){
@@ -55,5 +55,23 @@
 #include<vector>
 using namespace std;
 int main(){
-    
+    int r;
+    cin>>r;
+    vector<vector<int>> arr;
+    cout<<"1 "<<endl;
+    arr.push_back(vector<int>(1,1));
+    for(int i=1; i<r; i++){
+        vector<int> cur;
+        cur.push_back(1);
+        cout<<"1 ";
+        for(int j=1; j<i; j++){
+            int val = arr[i-1][j-1]+arr[i-1][j];
+            cout<<val<<" ";
+            cur.push_back(val);
+        }
+        cout<<"1 ";
+        cur.push_back(1);
+        arr.push_back(cur);
+        cout<<endl;
+    }
 }

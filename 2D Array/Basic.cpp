@@ -29,4 +29,7 @@ int main() {
     vector<vector<int>> arr = {
         {}
     };
+
+
+    // vector<int> a(size of array (elements in array, initial value of array));
 }
