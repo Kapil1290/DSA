@@ -8,27 +8,38 @@ int main(){
     a.push_back(8);
     a.push_back(6);
     a.push_back(9);
+    a.push_back(5);
+    a.push_back(1);
 
     int l=0; int h=a.size()-1;
     int Ascore = 0;
     int Bscore = 0;
-    while(l<h){
+    while(l<=h){
         if((l)%2==0){
-            if(a[l]>a[h]){
-                Ascore += a[l];
-                Bscore += a[h];
+            if(l!=h){
+                if(a[l]>a[h]){
+                   Ascore += a[l];
+                   Bscore += a[h];
+                }else{
+                   Ascore += a[h];
+                   Bscore += a[l];
+                }
             }else{
-                Ascore += a[h];
-                Bscore += a[l];
+                Ascore += a[l];
             }
             l++; h--;
         }else{
-            if(a[l]>a[h]){
-                Bscore += a[l];
-                Ascore += a[h];
+            if(l!=h){
+                if(a[l]>a[h]){
+                   Bscore += a[l];
+                   Ascore += a[h];
+                }else{
+                    Bscore += a[h];
+                    Ascore += a[l];
+                }
             }else{
-                Bscore += a[h];
-                Ascore += a[l];
+                Bscore += a[l];
+                // cout<<l<<" "<<h;
             }
             l++; h--;
         }
