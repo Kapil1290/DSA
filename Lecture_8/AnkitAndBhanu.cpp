@@ -13,8 +13,26 @@ int main(){
     int Ascore = 0;
     int Bscore = 0;
     while(l<h){
-        if((l+h)%2==0){
-            
+        if((l)%2==0){
+            if(a[l]>a[h]){
+                Ascore += a[l];
+                Bscore += a[h];
+            }else{
+                Ascore += a[h];
+                Bscore += a[l];
+            }
+            l++; h--;
+        }else{
+            if(a[l]>a[h]){
+                Bscore += a[l];
+                Ascore += a[h];
+            }else{
+                Bscore += a[h];
+                Bscore += a[l];
+            }
+            l++; h--;
         }
     }
+
+    cout<<Ascore<<" "<<Bscore;
 }
