@@ -28,7 +28,7 @@ int main(){
                 Ascore += a[h];
             }else{
                 Bscore += a[h];
-                Bscore += a[l];
+                Ascore += a[l];
             }
             l++; h--;
         }
