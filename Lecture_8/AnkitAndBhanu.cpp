@@ -10,8 +10,11 @@ int main(){
     a.push_back(9);
 
     int l=0; int h=a.size()-1;
-
+    int Ascore = 0;
+    int Bscore = 0;
     while(l<h){
-        
+        if((l+h)%2==0){
+            
+        }
     }
 }
