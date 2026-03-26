@@ -8,4 +8,10 @@ int main(){
     a.push_back(8);
     a.push_back(6);
     a.push_back(9);
+
+    int l=0; int r=a.size()-1;
+
+    while(l<h){
+        
+    }
 }
