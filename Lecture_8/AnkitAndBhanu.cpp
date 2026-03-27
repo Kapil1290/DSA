@@ -6,6 +6,7 @@ int main(){
     a.push_back(4);
     a.push_back(5);
     a.push_back(6);
+    a.push_back(2);
     int l=0; int h=a.size()-1;
     int Ascore = 0;
     int Bscore = 0;
