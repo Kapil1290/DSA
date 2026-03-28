@@ -8,10 +8,10 @@ int main() {
 	cin>>n;
 	vector<int> a = {1,2,3,4,5,6,7,8,9};
 	int temp;
-	// for(int i=0; i<n; i++){
-	// 	cin>>temp;
-	// 	a.push_back(temp);
-	// }
+	for(int i=0; i<n; i++){
+		cin>>temp;
+		a.push_back(temp);
+	}
 
 	int target =10;
 	cin>>target;
