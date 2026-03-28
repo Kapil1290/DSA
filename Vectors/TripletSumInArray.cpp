@@ -12,6 +12,7 @@ int main() {
 		cin>>temp;
 		a.push_back(temp);
 	}
+    
 	int target =10;
 	cin>>target;
 
