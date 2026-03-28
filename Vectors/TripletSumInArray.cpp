@@ -47,25 +47,25 @@ int main() {
 
     sort(a.begin(),a.end());
 
-    for (int i = 0; i < n - 2; i++) {
+    // for (int i = 0; i < n - 2; i++) {
         
-        // Two-pointer pointers
-        int left = i + 1;
-        int right = n - 1;
+    //     // Two-pointer pointers
+    //     int left = i + 1;
+    //     int right = n - 1;
 
-        while (left < right) {
-            int currentSum = a[i] + a[left] + a[right];
-            cout<<currentSum<<" ";
-            if (currentSum == target) {
-                cout << "Triplet found: " << a[i] << ", "<< a[left] << ", " << a[right] << endl;
-            } 
-            else if (currentSum < target) {
-                left++;
-            } 
-            else {
-                right--;
-            }
-        }
-    }
+    //     while (left < right) {
+    //         int currentSum = a[i] + a[left] + a[right];
+    //         cout<<currentSum<<" ";
+    //         if (currentSum == target) {
+    //             cout << "Triplet found: " << a[i] << ", "<< a[left] << ", " << a[right] << endl;
+    //         } 
+    //         else if (currentSum < target) {
+    //             left++;
+    //         } 
+    //         else {
+    //             right--;
+    //         }
+    //     }
+    // }
 
 }
