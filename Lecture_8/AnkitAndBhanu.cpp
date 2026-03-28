@@ -2,9 +2,9 @@
 #include<vector>
 using namespace std;
 int main(){
-    vector<int> a
+    vector<int> a = {10,2}
 
-    
+
     int l=0; int h=a.size()-1;
     int Ascore = 0;
     int Bscore = 0;
