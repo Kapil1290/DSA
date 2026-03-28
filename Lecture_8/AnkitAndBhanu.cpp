@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 int main(){
-    vector<int> a = {10,2}
+    vector<int> a = {10,2};
 
 
     int l=0; int h=a.size()-1;
