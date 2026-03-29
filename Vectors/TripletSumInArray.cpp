@@ -49,7 +49,7 @@ int main() {
 
     // for (int i = 0; i < n - 2; i++) {
         
-    //     // Two-pointer pointers
+        // Two-pointer pointers
     //     int left = i + 1;
     //     int right = n - 1;
 
