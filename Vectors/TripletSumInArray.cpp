@@ -45,7 +45,7 @@ int main() {
         }
     }
 
-    // sort(a.begin(),a.end());
+    sort(a.begin(),a.end());
 
     // for (int i = 0; i < n - 2; i++) {
         
