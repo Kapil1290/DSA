@@ -9,7 +9,7 @@ int main(){
     int target = 4;
     int r=0;
     int l=0;
-    
+    int sum = 0;
     while(r<a.size()){
         
     }
