@@ -11,7 +11,7 @@ int main(){
     int l=0;
     
     while(r<a.size()){
-
+        
     }
 
 }
