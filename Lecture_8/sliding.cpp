@@ -10,5 +10,8 @@ int main(){
     int r=0;
     int l=0;
     
+    while(r<a.size()){
+        
+    }
 
 }
