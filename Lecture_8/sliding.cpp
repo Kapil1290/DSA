@@ -2,6 +2,7 @@
 #include<vector>
 #include<algorithm>
 #include<cmath>
+#include <climits>
 using namespace std;
 
 int main(){ 
@@ -10,8 +11,12 @@ int main(){
     int r=0;
     int l=0;
     int sum = 0;
+    int ans = INT_MIN;
     while(r<a.size()){
-        
+        sum += a[r];
+        while(sum==target){
+            
+        }
     }
 
 }
