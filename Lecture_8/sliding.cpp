@@ -18,7 +18,7 @@ int main(){
             ans = max(ans, r-l+1);
         }
         if(sum>target){
-            
+            l++;
         }
         r++;
     }
