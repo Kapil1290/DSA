@@ -17,7 +17,9 @@ int main(){
         while(sum==target){
             ans = max(ans, r-l+1);
         }
-        if(sum>)
+        if(sum>target){
+            
+        }
         r++;
     }
 
