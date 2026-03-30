@@ -14,12 +14,10 @@ int main(){
     int ans = INT_MIN;
     while(r<a.size()){
         sum += a[r];
-        while(sum==target){
+        while(sum>=target){
             ans = max(ans, r-l+1);
         }
-        if(sum>target){
-            l++;
-        }
+       
         r++;
     }
 
