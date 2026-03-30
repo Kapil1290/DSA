@@ -15,7 +15,7 @@ int main(){
     while(r<a.size()){
         sum += a[r];
         while(sum==target){
-            
+            ans = max(ans, r-l+1);
         }
     }
 
