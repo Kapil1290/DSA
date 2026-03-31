@@ -23,4 +23,6 @@ int main(){
         r++;
     }
 
+    cout<<an
+
 }
