@@ -8,6 +8,6 @@ int main(){
     int k=3;
     int a=0;
     for(int i=0; i<arr.size()/k; i++){
-        reverse(arr.begin()+a, arr.begin()+)
+        reverse(arr.begin()+a, arr.begin()+a+k);
     }
 }
