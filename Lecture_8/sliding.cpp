@@ -19,7 +19,6 @@ int main(){
             sum = sum - a[l];
             l++;
         }
-       
         r++;
     }
 
