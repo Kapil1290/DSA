@@ -23,6 +23,6 @@ int main(){
         r++;
     }
 
-    cout<<an
+    cout<<ans;
 
 }
