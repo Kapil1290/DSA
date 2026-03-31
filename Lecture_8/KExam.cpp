@@ -1,6 +1,6 @@
 #include<iostream>
 #include<vector>
-
+#include<algorithm>
 using namespace std;
 
 int main(){
@@ -9,5 +9,9 @@ int main(){
     int a=0;
     for(int i=0; i<arr.size()/k; i++){
         reverse(arr.begin()+a, arr.begin()+a+k);
+        a=a+k;
     }
+    reverse(arr.begin()+a, arr.end());
+
+    
 }
