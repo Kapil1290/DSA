@@ -11,5 +11,6 @@ int main(){
     for(int i=0; i<arr.size()/k; i++){
         reverse(arr.begin()+a, arr.begin()+k);
         a = a+k;
+        df
     }
 }
