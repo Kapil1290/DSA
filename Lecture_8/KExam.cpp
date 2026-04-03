@@ -9,7 +9,7 @@ int main(){
     int a=0;
     
     for(int i=0; i<arr.size()/k; i++){
-        reverse(arr.begin()+a, arr.begin()+k);
+        reverse(arr.begin()+a, arr.begin()+k+a);
         a = a+k;
     }
 }
