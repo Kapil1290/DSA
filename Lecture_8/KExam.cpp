@@ -12,4 +12,6 @@ int main(){
         reverse(arr.begin()+a, arr.begin()+k+a);
         a = a+k;
     }
+
+    reverse(arr.)
 }
