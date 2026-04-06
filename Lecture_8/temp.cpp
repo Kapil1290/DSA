@@ -4,17 +4,20 @@
 using namespace std;
 
 int main() {
-	int nums[] = {1,3,2,3,2};
-	int val = 3;
-	int size = sizeof(nums)/sizeof(int);
-    int count=0;
-        for(int i=0; i<size; i++){
-            if(nums[i]!=val){
-				nums[count]=nums[i];
-				count++;
-			}
-        }
-        cout<<count;
+	// int nums[] = {1,3,2,3,2};
+	// int val = 3;
+	// int size = sizeof(nums)/sizeof(int);
+    // int count=0;
+    //     for(int i=0; i<size; i++){
+    //         if(nums[i]!=val){
+	// 			nums[count]=nums[i];
+	// 			count++;
+	// 		}
+    //     }
+    //     cout<<count;
+
+
+	
 }
 
 
