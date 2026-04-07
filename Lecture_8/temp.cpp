@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-	// int nums[] = {1,3,2,3,2};
+	vector<int> nums = {4,3,2,7,8,2,3,1};
 	// int val = 3;
 	// int size = sizeof(nums)/sizeof(int);
     // int count=0;
@@ -15,6 +15,20 @@ int main() {
 	// 		}
     //     }
     //     cout<<count;
+
+	for(int i=0; i<nums.size(); i++){
+		int idx = abs(nums[i])-1;
+		if(nums[idx]>0){
+			nums[idx] = -nums[idx];
+
+		}
+	}
+
+	for(int i=0; i<nums.size(); i++){
+		if(nums[i]>0){
+			cout<<i+1<<" ";
+		}
+	}
 
 	
 }
