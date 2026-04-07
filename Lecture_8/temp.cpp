@@ -5,16 +5,16 @@ using namespace std;
 
 int main() {
 	vector<int> nums = {4,3,2,7,8,2,3,1};
-	// int val = 3;
-	// int size = sizeof(nums)/sizeof(int);
-    // int count=0;
-    //     for(int i=0; i<size; i++){
-    //         if(nums[i]!=val){
-	// 			nums[count]=nums[i];
-	// 			count++;
-	// 		}
-    //     }
-    //     cout<<count;
+	int val = 3;
+	int size = sizeof(nums)/sizeof(int);
+    int count=0;
+        for(int i=0; i<size; i++){
+            if(nums[i]!=val){
+				nums[count]=nums[i];
+				count++;
+			}
+        }
+        cout<<count;
 
 	// for(int i=0; i<nums.size(); i++){
 	// 	int idx = abs(nums[i])-1;
