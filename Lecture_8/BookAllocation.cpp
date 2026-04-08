@@ -19,7 +19,9 @@ int main(){
     int ans;
     while(l<h){
         int mid = l+(h-l)/2;
-        if(isValid(arr,))
+        if(isValid(arr,k, mid)){
+            
+        }
     }
 
 }
