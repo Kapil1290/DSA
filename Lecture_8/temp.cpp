@@ -30,6 +30,15 @@ int main() {
 	// 	}
 	// }
 
+	vector<int> a = {4,-6,2,8};
+
+	for(int i=0; i<a.size(); i++){
+		for(int j=0; j<=i; j++){
+			cout<<a[j]<<" ";
+		}
+		
+	}
+
 	
 }
 
