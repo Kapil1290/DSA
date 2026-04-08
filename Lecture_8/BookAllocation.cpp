@@ -17,6 +17,7 @@ int main(){
     }
     int ans;
     while(l<h){
+        int mid = l+(h-l)/2;
         
     }
 
