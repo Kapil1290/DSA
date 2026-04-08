@@ -9,6 +9,7 @@ bool isValid(){
 
 int main(){
     vector<int> arr = {2,3,5,7,8};
+    int k=2;
     int l=0;
     int h=0;
     for(int i: arr){
@@ -18,7 +19,7 @@ int main(){
     int ans;
     while(l<h){
         int mid = l+(h-l)/2;
-        
+        if(isValid(arr,))
     }
 
 }
