@@ -16,6 +16,8 @@ int main(){
         h += i;
     }
     int ans;
-    while(l<h)
+    while(l<h){
+        
+    }
 
 }
