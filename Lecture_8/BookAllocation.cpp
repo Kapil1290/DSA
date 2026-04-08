@@ -15,6 +15,7 @@ int main(){
         l = max(l, i);
         h += i;
     }
+    int ans;
+    while(l<h)
 
-    
 }
