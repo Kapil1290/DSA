@@ -16,5 +16,5 @@ int main(){
         h += i;
     }
 
-    cout<<l<<" "<<h;
+    
 }
