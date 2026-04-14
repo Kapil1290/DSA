@@ -19,7 +19,7 @@ int main(){
     }
 
 
-    if("hello")
+    if("hello" == )
 
 
     
