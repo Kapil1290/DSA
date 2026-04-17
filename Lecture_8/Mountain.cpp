@@ -8,5 +8,7 @@ int main(){
     int l=0;
     int h=arr.size();
 
-    
+    while(l<=h){
+        
+    }
 }
