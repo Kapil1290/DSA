@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 int main(){
-    vector<int> arr = {0,1,6,4,5,1};
+    vector<int> arr = {0,1,4,6,5,1};
 
 
     int l=0;
