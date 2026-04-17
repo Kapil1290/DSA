@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 int main(){
-    vector<int> arr = {0,2,3,4,3,2,1};
+    vector<int> arr = {0,1,6,4,5,1};
 
 
     int l=0;
@@ -10,7 +10,9 @@ int main(){
 
     while(l<=h){
         int mid = l+(h-l)/2;
+        int curVal = arr[mid];
+        if(arr[mid-1]>curVal){
 
-        
+        }
     }
 }
