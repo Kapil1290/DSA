@@ -2,8 +2,8 @@
 #include<vector>
 using namespace std;
 int main(){
-    // vector<int> arr = {0,1,4,6,5,1};
-    vector<int> arr = {0,1,0};
+    vector<int> arr = {0,3,8,9,5,2};
+    // vector<int> arr = {0,10,5,2};
 
 
     int l=0;
