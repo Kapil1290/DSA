@@ -12,7 +12,11 @@ int main(){
         int mid = l+(h-l)/2;
         int curVal = arr[mid];
         if(arr[mid-1]>curVal){
-
+            h = mid-1;
+        }else if(arr[mid+1]> curVal){
+            l = mid+1;
+        }else{
+            cout<<arr[mid]; break;
         }
     }
 }
