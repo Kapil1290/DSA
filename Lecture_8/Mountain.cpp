@@ -9,6 +9,8 @@ int main(){
     int h=arr.size();
 
     while(l<=h){
+        int mid = l+(h-l)/2;
+
         
     }
 }
