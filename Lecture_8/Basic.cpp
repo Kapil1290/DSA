@@ -28,11 +28,11 @@ using namespace std;
 int main() {
    int a = ceil(7/4);
    cout<<a<<endl;
-// 	long long int n;
-// 	cin>>n;
-// 	long long int copyOfN = n;
-// 	int count=0;
-// 	int count1;
+	long long int n;
+	cin>>n;
+	long long int copyOfN = n;
+	int count=0;
+	int count1;
 
 //     if(n==0){
 // 		cout<<"5";
