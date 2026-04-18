@@ -26,8 +26,8 @@
 using namespace std;
 
 int main() {
-   // int a = ceil(7/4);
-   // cout<<a<<endl;
+   int a = ceil(7/4);
+   cout<<a<<endl;
 // 	long long int n;
 // 	cin>>n;
 // 	long long int copyOfN = n;
@@ -101,7 +101,7 @@ int main() {
    //    cout<<arr[i]<<" ";
    // }
 
-   
+
 
 
 }
