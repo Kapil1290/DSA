@@ -26,8 +26,8 @@
 using namespace std;
 
 int main() {
-   int a = ceil(7/4);
-   cout<<a<<endl;
+   // int a = ceil(7/4);
+   // cout<<a<<endl;
 // 	long long int n;
 // 	cin>>n;
 // 	long long int copyOfN = n;
@@ -85,20 +85,23 @@ int main() {
    // float a = 0.5555555*(0-32);
    // cout<<a;
 
-   int arr[] = {0,1,0,3,12};
+   // int arr[] = {0,1,0,3,12};
 
-   int p1 = 0,p2 = 0;
-   int size = sizeof(arr)/sizeof(int);
-   while(p1<size && p2<size){
-      if(arr[p1]==0 && arr[p2]!=0){
-         swap(arr[p1],arr[p2]);
-          p1++; p2++;
-      }else{
-         p2++;
-      }
-   }
+   // int p1 = 0,p2 = 0;
+   // int size = sizeof(arr)/sizeof(int);
+   // while(p1<size && p2<size){
+   //    if(arr[p1]==0 && arr[p2]!=0){
+   //       swap(arr[p1],arr[p2]);
+   //        p1++; p2++;
+   //    }else{
+   //       p2++;
+   //    }
+   // }
+   // for(int i=0; i<size; i++){
+   //    cout<<arr[i]<<" ";
+   // }
 
-   for(int i=0; i<size; i++){
-      cout<<arr[i]<<" ";
-   }
+   
+
+
 }
