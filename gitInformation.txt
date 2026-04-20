@@ -1,0 +1,11 @@
+
+
+
+---> git initialize karo -> git init
+---> check kar sakte ho ki aap kis stage me hai -> git status -s
+---> check kar sakte ho ki kitne saved checkpoints hai -> git log --oneline --graph
+
+
+git status sirf unka status bataega jo file commited nahi he or jo commit hone ke baad change ki gayi he
+
+
