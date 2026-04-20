@@ -6,6 +6,9 @@
 ---> check kar sakte ho ki kitne saved checkpoints hai -> git log --oneline --graph
 
 
-git status sirf unka status bataega jo file commited nahi he or jo commit hone ke baad change ki gayi he
+git status sirf unka status bataega jo file committed nahi he or jo commit hone ke baad change ki gayi he
+git log batata he ki kitne saved points he
 
 
+
+-----Branching-----
