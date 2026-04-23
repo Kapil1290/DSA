@@ -13,13 +13,7 @@ int main(){
     int ans=arr[0];
     int curr=arr[0];
     for(int i=0; i<n; i++){
-        ans += arr[i];
-        if(ans>curr){
-            curr = ans;
-        }
-        if(ans<0){
-            ans=0;
-        }
+       
     }
 
     cout<<ans;
