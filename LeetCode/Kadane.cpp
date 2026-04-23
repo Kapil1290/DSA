@@ -1,4 +1,5 @@
 #include<iostream>
+#include<climits>
 #include<vector>
 using namespace std;
 int main(){
@@ -10,10 +11,14 @@ int main(){
         cin>>arr[i];
     }
 
-    int ans=arr[0];
-    int curr=arr[0];
+    int cur = arr[0];
+    int ans = INT_MIN;
     for(int i=0; i<n; i++){
-       
+       cur += arr[i];
+       if(cur < 0){
+        cur=0;
+       }
+       ans = max(ans, cur);
     }
 
     cout<<ans;
