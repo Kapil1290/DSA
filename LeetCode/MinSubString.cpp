@@ -3,7 +3,11 @@
 using namespace std;
 int main(){
     string s = "ABSDCBOCTDBANC";
-    string t = "BANC";
+    string t = "ABC";
 
-    vector<int> freq = {0}
+    vector<int> freq(128,0);
+
+    for(int i=0; i<s.size(); i++){
+        
+    }
 }
