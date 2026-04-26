@@ -26,11 +26,11 @@ int main(){
     int l=0;
     int minLength=INT_MAX;
     int startingChar = INT_MAX;
-    cout<<str2[0]<<" "<<str2[1]<<" "<<str2[2]<<" ";
-    for(int i=0; i<s.size(); i++){
+    // cout<<str1[65]<<" "<<str1[66]<<" "<<str1[67]<<" ";
+    for(int i=0; i<str1.size(); i++){
         str2[t[i]]++;
         while(isValid(str1, str2)){
-            cout<<s[i]<<i<<endl;
+            cout<<str1[i]<<i<<endl;
             if(minLength>i-l+1){
                 minLength=i-l+1;
                 startingChar=l;
