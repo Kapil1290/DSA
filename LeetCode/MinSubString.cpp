@@ -13,14 +13,14 @@ bool isValid(vector<int> s, vector<int> t){
 }
 
 int main(){
-    string s = "AODBKCNBA";
+    string s = "AODBKBANC";
     string t = "ABC";
     string res="";
     vector<int> str1(128,0);
     vector<int> str2(128,0);
 
     for(int i=0; i<t.size(); i++){
-        str2[s[i]]++;
+        str2[t[i]]++;
     }
 
     int l=0;
