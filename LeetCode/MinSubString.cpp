@@ -20,28 +20,28 @@ int main(){
     vector<int> str2(128,0);
 
     for(int i=0; i<t.size(); i++){
-        str1[s[i]]++;
+        str2[s[i]]++;
     }
 
     int l=0;
     int minLength=INT_MAX;
-    int startingChar = INT_MAX;
+    int startingChar = 0;
     // cout<<str1[65]<<" "<<str1[66]<<" "<<str1[67]<<" ";
     for(int i=0; i<str1.size(); i++){
-        str2[t[i]]++;
+        str1[s[i]]++;
         while(isValid(str1, str2)){
-            cout<<str1[i]<<i<<endl;
+            // cout<<str1[i]<<i<<endl;
             if(minLength>i-l+1){
                 minLength=i-l+1;
                 startingChar=l;
             }
-            str2[t[l]]--;
+            str1[s[l]]--;
             l++;
         }
     }
 
     
-    string str =  (minLength==INT_MAX) ? "" : s.substr(startingChar, startingChar+minLength);
+    string str =  minLength==INT_MAX ? "" : s.substr(startingChar, minLength);
     cout<<str;
 }
 
