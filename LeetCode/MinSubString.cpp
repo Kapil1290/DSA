@@ -13,7 +13,7 @@ bool isValid(vector<int> s, vector<int> t){
 }
 
 int main(){
-    string s = "AODBKBANC";
+    string s = "Ab";
     string t = "ABC";
     string res="";
     vector<int> str1(128,0);
