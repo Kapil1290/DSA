@@ -26,7 +26,7 @@ int main(){
     int l=0;
     int minLength=INT_MAX;
     int startingChar = 0;
-    // cout<<str1[65]<<" "<<str1[66]<<" "<<str1[67]<<" ";
+    // cout<<str1[65]<<" "<<
     for(int i=0; i<str1.size(); i++){
         str1[s[i]]++;
         while(isValid(str1, str2)){
