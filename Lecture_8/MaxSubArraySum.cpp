@@ -14,7 +14,7 @@ int main(){
     //         maxi = max(maxi, pre);
     //     }
     /  }
-    // cout<<maxi;
+    // cout<<maxi
 
 
     // Kadane's Algorithm ---
