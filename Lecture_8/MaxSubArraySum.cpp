@@ -13,7 +13,7 @@ int main(){
     //         pre += a[j];
     //         maxi = max(maxi, pre);
     //     }
-    /  }
+    //  }
     // cout<<maxi;
 
 
