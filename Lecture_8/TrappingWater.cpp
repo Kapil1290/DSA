@@ -5,7 +5,7 @@
 
 using namespace std;
 int main(){
-    vector<int> arr = {4,2,0,5,2,6,2,3};
+    vector<int> arr = {4,2,0,5,2,2,2,3};
 
     int leftMax[arr.size()];
     int rightMax[arr.size()];
