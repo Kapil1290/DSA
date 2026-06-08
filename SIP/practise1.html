@@ -1,0 +1,423 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tab</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<style>
+   *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Segoe UI", sans-serif;
+    background:#fff;
+    color:#242424;
+}
+
+/* TOPBAR */
+
+.topbar{
+    height:60px;
+    border-bottom:1px solid #e6e6e6;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 24px;
+}
+
+.left-top{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.logo{
+    font-size:48px;
+    font-weight:700;
+    font-family:Georgia, serif;
+}
+
+.search-box{
+    width:280px;
+    background:#f2f2f2;
+    border-radius:30px;
+    padding:10px 15px;
+    display:flex;
+    gap:10px;
+}
+
+.search-box input{
+    border:none;
+    background:transparent;
+    outline:none;
+    width:100%;
+}
+
+.right-top{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.right-top img{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+}
+
+.app-btn{
+    background:#191919;
+    color:#fff;
+    border:none;
+    padding:10px 18px;
+    border-radius:25px;
+}
+
+/* LAYOUT */
+
+.container{
+    display:grid;
+    grid-template-columns:250px 1fr 330px;
+    min-height:calc(100vh - 60px);
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    border-right:1px solid #e6e6e6;
+    padding:30px;
+}
+
+.item{
+    display:flex;
+    gap:15px;
+    margin-bottom:28px;
+    cursor:pointer;
+}
+
+.item span{
+    font-size:26px;
+}
+
+/* CENTER */
+
+.content{
+    padding:40px;
+}
+
+.tabs{
+    display:flex;
+    gap:30px;
+    border-bottom:1px solid #e6e6e6;
+    padding-bottom:15px;
+    margin-bottom:30px;
+}
+
+.active-tab{
+    border-bottom:2px solid black;
+    padding-bottom:15px;
+}
+
+.post{
+    display:flex;
+    justify-content:space-between;
+    padding:30px 0;
+    border-bottom:1px solid #eee;
+}
+
+.post-content{
+    width:70%;
+}
+
+.author{
+    font-size:14px;
+    color:#757575;
+    margin-bottom:10px;
+}
+
+.post h2{
+    font-size:42px;
+    line-height:1.2;
+    margin-bottom:10px;
+    font-weight:700;
+}
+
+.post p{
+    font-size:24px;
+    color:#6b6b6b;
+}
+
+.stats{
+    margin-top:20px;
+    color:#757575;
+}
+
+.post img{
+    width:180px;
+    height:120px;
+    object-fit:cover;
+}
+
+/* RIGHT */
+
+.right-panel{
+    border-left:1px solid #e6e6e6;
+    padding:40px 30px;
+}
+
+.right-panel h3{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.staff-item{
+    margin-bottom:30px;
+}
+
+.staff-item small{
+    color:#757575;
+}
+
+.staff-item h4{
+    font-size:24px;
+    line-height:1.4;
+    margin-top:8px;
+}
+
+.topic-title{
+    margin-top:50px;
+}
+
+.topics{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.topics span{
+    background:#f2f2f2;
+    padding:12px 18px;
+    border-radius:30px;
+    font-size:15px;
+}
+</style>
+<body>
+
+    <!-- TOP NAVBAR -->
+    <header class="topbar">
+        <div class="left-top">
+            <i class="fa-solid fa-bars"></i>
+
+            <h1 class="logo">Medium</h1>
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+
+        <div class="right-top">
+            <button class="app-btn">
+                <i class="fa-solid fa-qrcode"></i>
+                Get app
+            </button>
+
+            <a href="#">Write</a>
+            <i class="fa-regular fa-bell"></i>
+
+            <img
+            src="https://i.pravatar.cc/40"
+            alt="">
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="menu">
+
+                <div class="item active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </div>
+
+                <div class="item">
+                    <i class="fa-regular fa-bookmark"></i>
+                    <span>Library</span>
+                </div>
+
+                <div class="item">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Profile</span>
+                </div>
+
+                <div class="item">
+                    <i class="fa-regular fa-file-lines"></i>
+                    <span>Stories</span>
+                </div>
+
+                <div class="item">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span>Stats</span>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="following">
+                <div class="item">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Following</span>
+                </div>
+
+                <div class="item">
+                    <i class="fa-solid fa-plus"></i>
+                    <span>Find writers and publications to follow.</span>
+                </div>
+
+                <a href="#">See suggestions</a>
+            </div>
+
+        </aside>
+
+        <!-- CENTER -->
+
+        <main class="content">
+
+            <div class="tabs">
+                <span class="active-tab">For you</span>
+                <span>Featured</span>
+            </div>
+
+            <!-- ARTICLE -->
+
+            <article class="post">
+
+                <div class="post-content">
+
+                    <div class="author">
+                        Leo Godin · Mar 2
+                    </div>
+
+                    <h2>Claude Code is Great</h2>
+
+                    <p>You Just Need to Learn How to Use It</p>
+
+                    <div class="stats">
+                        ⭐ 5.2K
+                        💬 150
+                        🔁 87
+                    </div>
+
+                </div>
+
+                <img src="https://picsum.photos/250/140" alt="">
+            </article>
+
+            <article class="post">
+
+                <div class="post-content">
+
+                    <div class="author">
+                        Data Science Collective · Feb 23
+                    </div>
+
+                    <h2>Should You Still Learn to Code in 2026?</h2>
+
+                    <p>The answer isn't as obvious as it used to believe.</p>
+
+                    <div class="stats">
+                        ⭐ 3.6K
+                        💬 178
+                        🔁 94
+                    </div>
+
+                </div>
+
+                <img src="https://picsum.photos/251/140" alt="">
+            </article>
+
+            <article class="post">
+
+                <div class="post-content">
+
+                    <div class="author">
+                        Books Are Our Superpower · Mar 9
+                    </div>
+
+                    <h2>“Women Are Basically Reading Porn”</h2>
+
+                    <p>And other misogynistic comments...</p>
+
+                    <div class="stats">
+                        ⭐ 6K
+                        💬 305
+                        🔁 167
+                    </div>
+
+                </div>
+
+                <img src="https://picsum.photos/252/140" alt="">
+            </article>
+
+        </main>
+
+        <!-- RIGHT -->
+
+        <aside class="right-panel">
+
+            <h3>Staff Picks</h3>
+
+            <div class="staff-item">
+                <small>devin bambrick</small>
+                <h4>Gatori Fishing in America</h4>
+            </div>
+
+            <div class="staff-item">
+                <small>John DeVore</small>
+                <h4>Cigarettes are bad. I miss them.</h4>
+            </div>
+
+            <div class="staff-item">
+                <small>Divya Sabade</small>
+                <h4>
+                    I Sat in Engineering Meetings for Two Years
+                </h4>
+            </div>
+
+            <h3 class="topic-title">
+                Recommended topics
+            </h3>
+
+            <div class="topics">
+
+                <span>Technology</span>
+                <span>Relationships</span>
+                <span>Self Improvement</span>
+                <span>Writing</span>
+                <span>Machine Learning</span>
+                <span>Politics</span>
+                <span>Cryptocurrency</span>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</body>
+</html>
