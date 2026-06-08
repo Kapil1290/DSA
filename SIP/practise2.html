@@ -5,7 +5,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .main{
+        background-color: rgb(230, 227, 227);
+       
+    }
+    .nav{
+        width: auto;
+        height: 50px;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .lcontent{
+        display: flex;
+        width: 15%;
+        height: 60%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;   
+    }
+    .search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        width: 300px;
+        height: 30px;   
+        border:2px solid rgb(167, 151, 151);
+        border-radius: 20px;
+    }
+    .logo{
+        font-size: 30px;
+        font-weight: 500;
+        padding-bottom: 5px;
+        font-weight: bolder;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .rcontent{
+        display: flex;
+        width: 20%;
+        height: 60%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+        padding-top: 7px;
+        padding-right: 10px;
+    }
+    .profile{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: rgb(143, 130, 130);
+    }
+
+    .content{
+        display: flex;
+        justify-content: center;
+        padding-top: 8px;
+    }
+    .leftpanel{
+        background-color: white;
+        height: 100%;
+        width: 200px;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 150px;
+    }
+    .tabs{
+        
+        
+        
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-left: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .ltabs{
+        font-size: larger;
+        margin: 12px;
+    }
+</style>
 <body>
-    
+    <div class="main">
+        <div class="nav">
+            <div class="lcontent">
+                <div class="logo">Medium</div>
+                <div class="search">
+                    <input type="text" placeholder="Search Medium" style="width: 400px; height: 30px; border-radius: 20px; border: none; padding-left: 10px;">
+                </div>
+            </div>
+            <div class="rcontent">
+                <button style="width: 80px; height: 30px; border-radius: 20px; border: none; background-color: black; color: white;">Get App</button>
+                <div>Write</div>
+                <div class="profile"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            Get unlimited access to the best stories on Medium — and support writers while you’re at it. Just $5/month. <a href="">Upgrade</a>
+        </div>
+
+        <div class="leftpanel">
+            <div class="tabs">
+                <p class="ltabs">Home</p>
+            <p class="ltabs">Library</p>
+            <p class="ltabs">Profile</p>
+            <p class="ltabs">Stories</p>
+            <p class="ltabs">Stats</p>
+            </div>
+
+            <div class="following">
+                Following
+                <p>find writer and publications to follow</p>
+                <a href="">See suggestions</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

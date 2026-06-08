@@ -42,7 +42,7 @@ body{
 }
 
 .logo{
-    font-size:48px;
+    font-size:40px;
     font-weight:700;
     font-family:Georgia, serif;
 }
@@ -96,6 +96,9 @@ body{
 .sidebar{
     border-right:1px solid #e6e6e6;
     padding:30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .item{
@@ -106,13 +109,15 @@ body{
 }
 
 .item span{
-    font-size:26px;
+    font-size:20px;
 }
+
 
 /* CENTER */
 
+
 .content{
-    padding:40px;
+    padding:30px;
 }
 
 .tabs{
@@ -146,14 +151,14 @@ body{
 }
 
 .post h2{
-    font-size:42px;
+    font-size:30px;
     line-height:1.2;
     margin-bottom:10px;
     font-weight:700;
 }
 
 .post p{
-    font-size:24px;
+    font-size:20px;
     color:#6b6b6b;
 }
 
@@ -189,7 +194,7 @@ body{
 }
 
 .staff-item h4{
-    font-size:24px;
+    font-size:20px;
     line-height:1.4;
     margin-top:8px;
 }
@@ -209,6 +214,13 @@ body{
     padding:12px 18px;
     border-radius:30px;
     font-size:15px;
+}
+
+.contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 50px;
 }
 </style>
 <body>
@@ -236,10 +248,14 @@ body{
             <i class="fa-regular fa-bell"></i>
 
             <img
-            src="https://i.pravatar.cc/40"
+            src=""
             alt="">
         </div>
     </header>
+
+    <div class="contents">
+            Get unlimited access to the best stories on Medium — and support writers while you’re at it. Just $5/month. <a href="">Upgrade</a>
+        </div>
 
     <div class="container">
 
@@ -251,27 +267,27 @@ body{
 
                 <div class="item active">
                     <i class="fa-solid fa-house"></i>
-                    <span>Home</span>
+                    <span class="tab">Home</span>
                 </div>
 
                 <div class="item">
                     <i class="fa-regular fa-bookmark"></i>
-                    <span>Library</span>
+                    <span class="tab">Library</span>
                 </div>
 
                 <div class="item">
                     <i class="fa-regular fa-user"></i>
-                    <span>Profile</span>
+                    <span class="tab">Profile</span>
                 </div>
 
                 <div class="item">
                     <i class="fa-regular fa-file-lines"></i>
-                    <span>Stories</span>
+                    <span class="tab">Stories</span>
                 </div>
 
                 <div class="item">
                     <i class="fa-solid fa-chart-simple"></i>
-                    <span>Stats</span>
+                    <span class="tab">Stats</span>
                 </div>
 
             </div>
@@ -317,11 +333,11 @@ body{
 
                     <p>You Just Need to Learn How to Use It</p>
 
-                    <div class="stats">
+                    <!-- <div class="stats">
                         ⭐ 5.2K
                         💬 150
                         🔁 87
-                    </div>
+                    </div> -->
 
                 </div>
 
@@ -340,11 +356,11 @@ body{
 
                     <p>The answer isn't as obvious as it used to believe.</p>
 
-                    <div class="stats">
+                    <!-- <div class="stats">
                         ⭐ 3.6K
                         💬 178
                         🔁 94
-                    </div>
+                    </div> -->
 
                 </div>
 
@@ -363,11 +379,11 @@ body{
 
                     <p>And other misogynistic comments...</p>
 
-                    <div class="stats">
+                    <!-- <div class="stats">
                         ⭐ 6K
                         💬 305
                         🔁 167
-                    </div>
+                    </div> -->
 
                 </div>
 
