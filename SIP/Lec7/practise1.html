@@ -5,17 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+<style>
+    .main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .lcontent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+
+    .imgs{
+        border-radius: 20px ;
+        margin-left: 100px;
+    }
+    
+    #img1{
+        width: 100px;
+        height: 100px;
+        transition: 0.8s;
+    }
+    
+    #img2{
+        width: 150px;
+        height: 100px;
+        position: absolute;
+        top: 50px;
+        transition: 0.8s;
+    }
+    #img3{
+        width: 200px;
+        height: 100px;
+        position: absolute;
+        top: 100px;
+        transition: 0.8s;
+    }
+    #img4{
+        width: 150px;
+        height: 60px;
+        position: absolute;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        top: 200px;
+        transition: 0.8s;
+        /* left: 200px; */
+    }
+    #img5{
+        width: 100px;
+        height: 40px;
+        position: absolute;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        top: 260px;
+        transition: 0.8s;
+    }
+    #img1:hover{
+        transform: scale(2.2);
+    }
+    #img2:hover{
+        transform: scale(1.2);
+    }
+    #img3:hover{
+        transform: scale(1.2);
+    }
+    #img4:hover{
+        transform: scale(1.2);   
+    }
+    #img5:hover{
+       
+        transform: scale(1.2);
+
+    }
+    .rcontent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        
+    }
+    hr{
+        width: 100px;
+    }
+    .arrow{
+        height: 40px;
+        width: 100px;
+    }
+</style>
 <body>
     <div class="main">
         <div class="lcontent">
-            <img src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg" alt="">
-            <img src="https://cdn.pixabay.com/photo/2021/12/12/20/00/play-6865967_1280.jpg" alt="">
-            <img src="https://thumbs.dreamstime.com/b/city-park-pond-shore-alley-20238927.jpg" alt="">
-            <img src="https://cdn.pixabay.com/photo/2013/07/25/13/01/stones-167089_1280.jpg" alt="">
-            <img src="https://cdn.packtpub.com/article-hub/articles/8d3ed3502379f18e38a00e04a0d59ab7.jpg" alt="">
+            <img class="imgs" id="img1" src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg" alt="">
+            <img class="imgs" id="img2" src="https://cdn.pixabay.com/photo/2021/12/12/20/00/play-6865967_1280.jpg" alt="">
+            <img class="imgs" id="img3" src="https://thumbs.dreamstime.com/b/city-park-pond-shore-alley-20238927.jpg" alt="">
+            <img class="imgs" id="img4" src="https://cdn.pixabay.com/photo/2013/07/25/13/01/stones-167089_1280.jpg" alt="">
+            <img class="imgs" id="img5" src="https://cdn.packtpub.com/article-hub/articles/8d3ed3502379f18e38a00e04a0d59ab7.jpg" alt="">
         </div>
         <div class="rcontent">
-
+            <img class="arrow" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjAHrN7wsYXwLFxxBH_YMkEo5pWRD0qn3e9w&s" alt="">
+            <span>Luffy kun</span>
+            <hr>
+            <span>Marketing Manager</span>
+            <img src="" alt="">
         </div>
     </div>
 </body>
