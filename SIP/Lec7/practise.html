@@ -16,7 +16,7 @@
 }
 
 body {
-    background: #f4f4f4;
+    background: white;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -57,38 +57,67 @@ body {
 }
 
 .top {
-    width: 280px;
+    transition: ease-in-out 0.8s;
+    width: 220px;
     height: 160px;
     top: 0;
 }
 
+.top:hover{
+    transform: scale(1.1);
+    z-index: 12;
+}
+
 .upper {
-    width: 380px;
+    transition: ease-in-out 0.8s;
+    width: 320px;
     height: 210px;
     top: 80px;
 }
 
+.upper:hover{
+    transform: scale(1.1);
+    z-index: 12225;
+}
+
 .active {
-       width: 540px;
+    transition: ease-in-out 0.8s;
+       width: 440px;
     height: 310px;
     top: 170px;
     z-index: 155;
 }
 
+.active:hover{
+    transform: scale(1.1);
+    z-index: 1452;
+}
+
 .lower {
-    width: 380px;
+    transition: ease-in-out 0.8s;
+    width: 320px;
     height: 180px;
     top: 410px;
     z-index: 15;
 }
 
+.lower:hover{
+    transform: scale(1.1);
+    z-index: 1222;
+}
+
 .bottom {
-    width: 280px;
+    transition: ease-in-out 0.8s;
+    width: 220px;
     height: 160px;
     top: 520px;
     position: absolute;
 }
 
+.bottom:hover{
+    transform: scale(1.1);
+    z-index: 122;
+}
 
 /* RIGHT SIDE */
 
@@ -197,8 +226,9 @@ h1 {
         <div class="content">
 
             <div class="buttons">
-                <button>⬆️</button>
-                <button>⬇️</button>
+                <!-- <button>⬆️</button>
+                <button>⬇️</button> -->
+                <img style="height: 100px; width: 100px;" src="https://img.magnific.com/free-vector/up-down-red-blue-arrows_78370-6835.jpg?semt=ais_hybrid&w=740&q=80" alt="">
             </div>
 
             <h1>Luffy kun</h1>
