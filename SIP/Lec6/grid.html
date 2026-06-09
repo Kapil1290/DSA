@@ -6,25 +6,45 @@
     <title>Document</title>
 </head>
 <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
     .flex{
+        height: 100%;
+        width: 100%;
+        
         display: grid;
-        grid-template-columns: 40px 40px;
-        gap: 10px;
+        padding: 4rem;
+        row-gap: 30px;
+        column-gap: 30px;
+        /* grid-template-columns: repeat(6, 1fr); */
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     .b1{
-        height: 100px;
-        width: 100px;
-        background-color: palevioletred;
-        border: 2px solid black;
-        gap: 10px;
+        background-color: rgb(108, 108, 244);
+        border: 2px solid rgb(152, 82, 82);
+        color: white;
+    }
+    .header{
+        grid-column-start: 1;
+        grid-column-end: 4;
     }
 </style>
 <body>
     <div class="flex">
-        <div class="b1"></div>
-        <div class="b1"></div>
-        <div class="b1"></div>
-        <div class="b1"></div>
+        <div class="b1 header">Header</div>
+        <div class="b1">Hello</div>
+        <div class="b1">Hello</div>
+        <div class="b1">Hello</div>
+        <div class="b1">Hello</div>
+        <div class="b1">Hello</div>
     </div>
 </body>
 </html>
