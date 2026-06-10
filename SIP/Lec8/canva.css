@@ -56,7 +56,7 @@
 .btns{
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    justify-content: space-between;
     
 }
 .b{
@@ -71,11 +71,32 @@
     height: 30px;
 }
 #b2{
-    background-color: rgb(215, 12, 164);
+    background-color: rgb(12, 46, 215);
     color: white;
 }
 
 .img1{
     display: flex;
     justify-content: space-between;
+}
+.upper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.recentImg{
+    width: 100%;
+    height: 100px;
+
+}
+
+.imgContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#i2{
+    width: 130px;
+    margin-right: 3px;
 }
