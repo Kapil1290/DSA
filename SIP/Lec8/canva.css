@@ -15,6 +15,8 @@
     width: 50%;
     align-items: start;
     padding: 10px;
+    color: white;
+    
 }
 .rcontent{
     display: flex;
@@ -22,4 +24,30 @@
     gap: 20px;
     align-items: end;
     padding: 10px;
+    color: white;
+}
+.lbox1{
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    font-size: small;
+    gap: 30px;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.left{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.lbox2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-weight: bold;
 }
