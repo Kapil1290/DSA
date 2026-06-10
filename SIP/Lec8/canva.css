@@ -39,7 +39,6 @@
 .left{
     display: flex;
     flex-direction: row;
-    /* margin-top: 5px; */
     margin-left: 10px;
     font-weight: bold;
 }
@@ -111,8 +110,9 @@
 
 .rightcontent{
     background-color: rgb(228, 231, 231);
-    width: 90px;
-    height: 700px;
+    /* width: 60px; */
+    /* height: 700px; */
+    width: 100vw;
 }
 
 .leftContent{
@@ -121,6 +121,12 @@
 }
 
 .maincontent{
+    width: 500px;
+    height: 500px;
+    
+}
+
+.rightcontent{
     display: flex;
     justify-content: center;
     align-content: center;

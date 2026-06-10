@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canva Editor UI Replication</title>
+    <link rel="stylesheet" href="pract2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="editor-container">
+    <header class="top-header">
+        <div class="header-left">
+            <span class="menu-item font-medium">File</span>
+            <span class="menu-item">Resize</span>
+            <span class="menu-item editing-pill"><i class="fa-solid fa-pen"></i> Editing <i class="fa-solid fa-chevron-down text-xs"></i></span>
+            <div class="history-icons">
+                <i class="fa-solid fa-arrow-rotate-left disabled"></i>
+                <i class="fa-solid fa-arrow-rotate-right disabled"></i>
+            </div>
+            <div class="cloud-status">
+                <i class="fa-solid fa-cloud"></i>
+                <span class="badge-new">New</span>
+            </div>
+        </div>
+        <div class="header-center">
+            <span class="doc-title">Sample</span>
+        </div>
+        <div class="header-right">
+            <button class="trial-btn"><i class="fa-solid fa-crown"></i> Start your trial for ₹0</button>
+            <div class="profile-icon">
+                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=32&h=32&q=80" alt="Avatar">
+            </div>
+            <i class="fa-solid fa-chart-simple header-icon"></i>
+            <i class="fa-solid fa-comment-dots header-icon"></i>
+            <button class="present-btn">Present <i class="fa-solid fa-chevron-down text-xs"></i></button>
+            <button class="share-btn">Share</button>
+        </div>
+    </header>
+
+    <div class="app-body">
+        
+        <nav class="tool-dock">
+            <div class="dock-item active">
+                <i class="fa-solid fa-table-cells-large"></i>
+                <span>Templates</span>
+            </div>
+            <div class="dock-item">
+                <i class="fa-solid fa-shapes"></i>
+                <span>Elements</span>
+            </div>
+            <div class="dock-item">
+                <i class="fa-solid fa-t"></i>
+                <span>Text</span>
+            </div>
+            <div class="dock-item">
+                <i class="fa-solid fa-crown text-crown"></i>
+                <span>Brand</span>
+            </div>
+            <div class="dock-item">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <span>Uploads</span>
+            </div>
+            <div class="dock-item">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <span>Tools</span>
+            </div>
+            <div class="dock-item">
+                <i class="fa-solid fa-folder"></i>
+                <span>Projects</span>
+            </div>
+            <div class="dock-item">
+                <i class="fa-solid fa-cubes"></i>
+                <span>Apps</span>
+            </div>
+            <div class="dock-item">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <span>Magic Media</span>
+            </div>
+            <div class="dock-item">
+                <i class="fa-solid fa-music"></i>
+                <span>Audio</span>
+            </div>
+            <div class="dock-item">
+                <i class="fa-solid fa-video"></i>
+                <span>videoforme</span>
+            </div>
+        </nav>
+
+        <aside class="side-panel">
+            <div class="search-box-container">
+                <div class="search-bar">
+                    <i class="fa-solid fa-plus icon-plus"></i>
+                    <input type="text" placeholder="Describe your ideal design">
+                    <i class="fa-solid fa-microphone"></i>
+                </div>
+                <div class="search-actions">
+                    <button class="btn-generate"><i class="fa-solid fa-wand-magic-sparkles"></i> Generate</button>
+                    <button class="btn-search">Search</button>
+                </div>
+            </div>
+
+            <div class="panel-scroll-content">
+                <div class="section-header">
+                    <h3>Recently used</h3>
+                    <span class="see-all-link">See all</span>
+                </div>
+                <div class="recent-grid">
+                    <div class="recent-thumb template-img-1"></div>
+                    <div class="recent-thumb template-img-2"></div>
+                </div>
+
+                <div class="section-header mt-4">
+                    <h3>All results</h3>
+                </div>
+                <div class="all-results-grid">
+                    <div class="result-thumb thumb-portfolio-1"></div>
+                    <div class="result-thumb thumb-portfolio-2"></div>
+                    <div class="result-thumb thumb-brief"></div>
+                    <div class="result-thumb thumb-portfolio-3"></div>
+                    <div class="result-thumb thumb-pitch-1"></div>
+                    <div class="result-thumb thumb-pitch-2"></div>
+                    <div class="result-thumb thumb-portfolio-4"></div>
+                    <div class="result-thumb thumb-portfolio-5"></div>
+                    <div class="result-thumb thumb-neutral"></div>
+                    <div class="result-thumb thumb-digital"></div>
+                </div>
+            </div>
+            
+            <div class="collapse-handle">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+        </aside>
+
+        <main class="workspace">
+            
+            <div class="floating-toolbar">
+                <button class="tool-btn text-sm font-medium">Edit</button>
+                <div class="color-indicator"></div>
+                <div class="toolbar-divider"></div>
+                <i class="fa-solid fa-bars toolbar-icon"></i>
+                <i class="fa-solid fa-bezier-curve toolbar-icon"></i>
+                <i class="fa-solid fa-border-top-left toolbar-icon"></i>
+                <div class="toolbar-divider"></div>
+                <span class="tool-text">Effects</span>
+                <span class="tool-text">Animate</span>
+                <span class="tool-text">Position</span>
+                <div class="toolbar-divider"></div>
+                <i class="fa-solid fa-paint-roller toolbar-icon"></i>
+            </div>
+
+            <div class="artboard">
+                <div class="shape-box"><div class="circle-shape"></div></div>
+                <div class="shape-box"><div class="square-shape"></div></div>
+                <div class="shape-box"><div class="triangle-shape"></div></div>
+                <div class="shape-box"><div class="pentagon-shape"></div></div>
+
+                <div class="shape-box"><div class="cross-shape"></div></div>
+                <div class="shape-box"><div class="parallelogram-shape"></div></div>
+                <div class="shape-box"><div class="arrow-shape"></div></div>
+                <div class="shape-box">
+                    <div class="active-selection-frame">
+                        <div class="heart-shape"></div>
+                        
+                        <div class="micro-action-menu">
+                            <i class="fa-regular fa-comment-dots"></i>
+                            <i class="fa-solid fa-lock-open"></i>
+                            <i class="fa-regular fa-copy"></i>
+                            <i class="fa-regular fa-trash-can"></i>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+
+                        <div class="pill-node node-top"></div>
+                        <div class="pill-node node-bottom"></div>
+                        <div class="pill-node node-left"></div>
+                        <div class="pill-node node-right"></div>
+                        
+                        <div class="circle-node node-tl"></div>
+                        <div class="circle-node node-tr"></div>
+                        <div class="circle-node node-bl"></div>
+                        <div class="circle-node node-br"></div>
+
+                        <div class="rotation-handle">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="bottom-strip">
+        <div class="strip-left">
+            <span class="action-item"><i class="fa-solid fa-signature"></i> Notes</span>
+            <span class="action-item"><i class="fa-regular fa-clock"></i> Timer</span>
+        </div>
+        
+        <div class="strip-center">
+            <div class="page-navigator-dock">
+                <div class="nested-slide-preview">
+                    <span class="page-num-index">1</span>
+                    <div class="mini-grid">
+                        <span class="m-c"></span><span class="m-s"></span><span class="m-t"></span><span class="m-p"></span>
+                        <span class="m-cr"></span><span class="m-pl"></span><span class="m-a"></span><span class="m-h"></span>
+                    </div>
+                </div>
+                <div class="add-blank-slide">
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="strip-right">
+            <input type="range" class="zoom-slider-range" min="10" max="200" value="53">
+            <span class="zoom-percentage">53%</span>
+            <div class="vertical-spacer"></div>
+            <button class="grid-view-btn"><i class="fa-solid fa-grip-horizontal"></i> Pages <span>1 / 1</span></button>
+            <i class="fa-solid fa-border-all utility-icon"></i>
+            <i class="fa-solid fa-arrows-maximize utility-icon"></i>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

@@ -5,7 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .box{
+        width: 90px;
+        height: 30px;
+        background-color: aqua;
+        border: 2px solid black;
+        /* transition-property: all;
+        transition-duration: 0.2s;
+        transition-delay: 0s;
+        transition-timing-function: ease-in-out; */
+        
+        transition: width 2s, height 3s;
+    }
+
+    .box:hover{
+        width: 100px;
+        height: 40px;
+        background-color: greenyellow;
+        border-radius: 9px;
+    }
+</style>
 <body>
-    <button></button>
+    <div class="box">
+
+    </div>
 </body>
 </html>
