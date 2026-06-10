@@ -50,4 +50,25 @@
     margin-top: 30px;
     margin-left: 10px;
     font-weight: bold;
+    gap: 10px;
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.b{
+    width: 100px;
+    border-radius: 10px;
+
+    
+}
+
+.rounded{
+    height: 30px;
+}
+#b2{
+    background-color: rgb(215, 12, 164);
+    color: white;
 }
