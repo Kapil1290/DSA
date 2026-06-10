@@ -111,11 +111,17 @@
 
 .rightcontent{
     background-color: rgb(228, 231, 231);
-    width: 100%;
-    height: 100%;
+    width: 90px;
+    height: 700px;
 }
 
 .leftContent{
     display: flex;
     flex-direction: row;
+}
+
+.maincontent{
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
