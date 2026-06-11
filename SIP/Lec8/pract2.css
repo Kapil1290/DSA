@@ -32,8 +32,8 @@ body {
 
 /* --- Top Header Configuration --- */
 .top-header {
-    height: 56px;
-    background: linear-gradient(90deg, rgb(15, 222, 245) 40%, rgb(30, 0, 255), rgb(255, 0, 251));
+    height: 60px;
+    background: linear-gradient(90deg, rgb(20, 223, 245) 40%, rgb(30, 0, 255), rgb(255, 0, 251));
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,7 +49,7 @@ body {
 }
 
 .menu-item {
-    font-size: 14px;
+    font-size: 20px;
     color: rgba(255, 255, 255, 0.85);
     cursor: pointer;
 }
@@ -65,7 +65,7 @@ body {
 .history-icons i {
     color: rgba(255,255,255,0.4);
     margin: 0 6px;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .cloud-status {
@@ -86,19 +86,21 @@ body {
 }
 
 .doc-title {
-    font-size: 14px;
+    font-size: 20px;
     color: #ffffff;
 }
 
 .trial-btn {
-    background: linear-gradient(90deg, #fcd34d, #f59e0b);
+   
     border: none;
     padding: 8px 14px;
     border-radius: 6px;
     font-weight: 600;
-    font-size: 13px;
-    color: #000;
+    font-size: 20px;
+    color: white;
     cursor: pointer;
+    border: 1px solid white;
+    border-radius: 10px;
 }
 
 .profile-icon img {
@@ -109,7 +111,7 @@ body {
 }
 
 .header-icon {
-    font-size: 16px;
+    font-size: 20px;
     color: rgba(255,255,255,0.8);
     cursor: pointer;
 }
@@ -134,7 +136,7 @@ body {
 
 /* Tool Navigation Left Dock */
 .tool-dock {
-    width: 72px;
+    width: 100px;
     background-color: var(--dock-bg);
     border-right: 1px solid var(--border-color);
     display: flex;
@@ -156,7 +158,7 @@ body {
     cursor: pointer;
     border-radius: 6px;
 }
-.dock-item i { font-size: 18px; }
+.dock-item i { font-size: 20px; }
 .dock-item.active {
     background-color: #f1f5f9;
     color: var(--canva-purple);
@@ -165,7 +167,7 @@ body {
 
 /* Side Content Layout Panel */
 .side-panel {
-    width: 320px;
+    width: 380px;
     background-color: var(--panel-bg);
     border-right: 1px solid var(--border-color);
     position: relative;
@@ -333,8 +335,8 @@ body {
 
 /* White Artboard Platform */
 .artboard {
-    width: 840px;
-    height: 480px;
+   width: 1300px;
+    height: 600px;
     background: #ffffff;
     box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
     display: grid;
@@ -522,7 +524,7 @@ body {
 
 /* --- Bottom Strip Controls --- */
 .bottom-strip {
-    height: 40px;
+    height: 200px;
     background-color: #ffffff;
     border-top: 1px solid var(--border-color);
     display: flex;
@@ -531,6 +533,9 @@ body {
     padding: 0 16px;
     font-size: 12px;
     font-weight: 500;
+    width: 1000px;
+    position: absolute;
+    bottom: 0;
 }
 
 .strip-left, .strip-right { display: flex; align-items: center; gap: 16px; }
