@@ -87,16 +87,34 @@
 // console.log(arr1)
 
 
-let data2 = [ 
-    { postId: 1, likes: 100 }, 
-    { postId: 2, likes: 200 } 
+// let data2 = [ 
+//     { postId: 1, likes: 100 }, 
+//     { postId: 2, likes: 200 } 
+// ] 
+
+// let totalLikes;
+// for(let i of data2){
+//     totalLikes = data2.reduce((initial, curr)=>{
+//         return initial+curr.likes;
+//     },0)
+// }
+
+// console.log(totalLikes)
+
+
+let data3 = [ 
+    { title: "Movie A", rating: 8.5 }, 
+{ title: "Movie B", rating: 6.0 },
+{ title: "Movie c", rating: 9.0 }
 ] 
-
-let totalLikes;
-for(let i of data2){
-    totalLikes = data2.reduce((initial, curr)=>{
-        return initial+curr.likes;
-    },0)
+ 
+let arr3=[];
+for(let i of data3){
+    arr3 = data3.filter((data)=> {
+        return data.rating > 8
+    
+    })
 }
+console.log(arr3)
 
-console.log(totalLikes)
+
