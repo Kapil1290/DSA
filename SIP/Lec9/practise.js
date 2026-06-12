@@ -21,12 +21,4 @@ for(let i=0; i<arr.length; i++){
 console.log("Task one done---------\n")
 console.log(avg)
 
-// for(let i=0; i<arr.length; i++){
-//     console.log(arr.map((a)=> {
-//         return{
-//             a
-//         }
-//     }))
-// }
-
 console.log(arr)
