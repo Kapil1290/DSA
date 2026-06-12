@@ -91,13 +91,14 @@ body {
 }
 
 .trial-btn {
-    background: linear-gradient(90deg, #fcd34d, #f59e0b);
-    border: none;
+    
+    border: 1px solid rgb(170, 187, 244);
     padding: 8px 14px;
+    
     border-radius: 6px;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 13px;
-    color: #000;
+    color: white;
     cursor: pointer;
 }
 
@@ -276,7 +277,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    /* top: 10px; */
+
     
 }
 
@@ -524,12 +525,13 @@ body {
 
 /* --- Bottom Strip Controls --- */
 .bottom-strip {
-    height: 70px;
+    height: 40px;
     background-color: #f1f5f9;
     /* border-top: 1px solid var(--border-color); */
     display: flex;
-    justify-content: space-between;
+    gap: 700px;
     align-items: center;
+    color: #c9c5c5;
     padding: 0 16px;
     margin-top: 30px;
     position: absolute;
