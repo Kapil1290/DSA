@@ -102,19 +102,34 @@
 // console.log(totalLikes)
 
 
-let data3 = [ 
-    { title: "Movie A", rating: 8.5 }, 
-{ title: "Movie B", rating: 6.0 },
-{ title: "Movie c", rating: 9.0 }
-] 
+// let data3 = [ 
+//     { title: "Movie A", rating: 8.5 }, 
+// { title: "Movie B", rating: 6.0 },
+// { title: "Movie c", rating: 9.0 }
+// ] 
  
-let arr3=[];
-for(let i of data3){
-    arr3 = data3.filter((data)=> {
-        return data.rating > 8
-    
-    })
+// let arr3=[];
+// for(let i of data3){
+//     arr3 = data3.filter((data)=> {
+//         return data.rating > 8
+//     })
+// }
+// console.log(arr3)
+
+
+
+
+let list = [ 
+    { name: "B", amount: 40000 }, 
+    { name: "A", amount: 50000 }, 
+    { name: "C", amount: 60000 }
+] 
+
+let total1;
+for(let a of list){
+    total1 = list.reduce((start, curr)=>{
+        return start+curr.amount;
+    },0)
 }
-console.log(arr3)
 
-
+console.log(total1)
