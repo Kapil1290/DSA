@@ -153,15 +153,28 @@
 
 
 
-let data4 = [
-{ user: "A", action: "login" }, 
-{ user: "B", action: "logout" }, 
-{ user: "C", action: "login" } 
+// let data4 = [
+// { user: "A", action: "login" }, 
+// { user: "B", action: "logout" }, 
+// { user: "C", action: "login" } 
+// ]
+// let count=0;
+// for(let a of data4){
+//     if(a.action=='login'){
+//         count++;
+//     }
+// }
+// console.log(count)
+
+
+let git = [
+    { repo: "A", stars: 100 }, 
+{ repo: "B", stars: 200 }
 ]
-let count=0;
-for(let a of data4){
-    if(a.action=='login'){
-        count++;
-    }
+let total;
+for(let a of git){
+    total = git.reduce((start, curr)=>{
+        return start+curr.stars;
+    },0)
 }
-console.log(count)
+console.log(total)
