@@ -53,22 +53,35 @@
 
 
 
-let list = [ 
-    { name: "A", salary: 50000 }, 
-    { name: "B", salary: 40000 }, 
-    { name: "C", salary: 60000 }
-] 
+// let list = [ 
+//     { name: "A", salary: 50000 }, 
+//     { name: "B", salary: 40000 }, 
+//     { name: "C", salary: 60000 }
+// ] 
 
-let arr = [];
-for(let a of list){
-    arr.push(a.salary);
-}
+// let arr = [];
+// for(let a of list){
+//     arr.push(a.salary);
+// }
 
-console.log(arr)
-let total;
-for(let i=0; i<list.length; i++){
-    total = list.reduce((a, b)=>{
-        return a+b.salary;
-    },0)
+// console.log(arr)
+// let total;
+// for(let i=0; i<list.length; i++){
+//     total = list.reduce((a, b)=>{
+//         return a+b.salary;
+//     },0)
+// }
+// console.log(total)
+
+
+let data1 = [
+    { name: "Laptop", stock: 5 }, 
+    { name: "Phone", stock: 0 }, 
+    { name: "Tablet", stock: 10 } 
+]
+
+let arr1 = [];
+for(let i=0; i<data1.length; i++){
+    arr1 = data1.filter((data)=>data.stock!=0)
 }
-console.log(total)
+console.log(arr1)
