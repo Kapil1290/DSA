@@ -74,14 +74,29 @@
 // console.log(total)
 
 
-let data1 = [
-    { name: "Laptop", stock: 5 }, 
-    { name: "Phone", stock: 0 }, 
-    { name: "Tablet", stock: 10 } 
-]
+// let data1 = [
+//     { name: "Laptop", stock: 5 }, 
+//     { name: "Phone", stock: 0 }, 
+//     { name: "Tablet", stock: 10 } 
+// ]
 
-let arr1 = [];
-for(let i=0; i<data1.length; i++){
-    arr1 = data1.filter((data)=>data.stock!=0)
+// let arr1 = [];
+// for(let i=0; i<data1.length; i++){
+//     arr1 = data1.filter((data)=>data.stock!=0)
+// }
+// console.log(arr1)
+
+
+let data2 = [ 
+    { postId: 1, likes: 100 }, 
+    { postId: 2, likes: 200 } 
+] 
+
+let totalLikes;
+for(let i of data2){
+    totalLikes = data2.reduce((initial, curr)=>{
+        return initial+curr.likes;
+    },0)
 }
-console.log(arr1)
+
+console.log(totalLikes)
