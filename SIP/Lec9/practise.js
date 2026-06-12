@@ -24,16 +24,29 @@
 // console.log(arr)
 
 
-let company = [ 
-    { category: "Electronics", amount: 500 }, 
-    { category: "Books", amount: 100 }, 
-    { category: "Electronics", amount: 300 } 
-] 
+// let company = [ 
+//     { category: "Electronics", amount: 500 }, 
+//     { category: "Books", amount: 100 }, 
+//     { category: "Electronics", amount: 300 } 
+// ] 
 
-let total;
-for(let i=0; i<company.length; i++){
-    total = company.reduce((start, curr)=>{
-        return start+curr.amount;
-    },0)
+// let total;
+// for(let i=0; i<company.length; i++){
+//     total = company.reduce((start, curr)=>{
+//         return start+curr.amount;
+//     },0)
+// }
+// console.log(total)
+
+
+
+let sentance = "The fox is quick. The fox is smart." 
+
+console.log(sentance.toUpperCase());
+let count=0;
+for(let i=0; i<sentance.length-2; i++){
+    if(sentance[i]=='f' && sentance[i+1]=='o' && sentance[i+2]=='x'){
+        count++;
+    }
 }
-console.log(total)
+console.log(count)
