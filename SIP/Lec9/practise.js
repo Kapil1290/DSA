@@ -119,17 +119,34 @@
 
 
 
-let list = [ 
-    { name: "B", amount: 40000 }, 
-    { name: "A", amount: 50000 }, 
-    { name: "C", amount: 60000 }
-] 
+// let list = [ 
+//     { name: "B", amount: 40000 }, 
+//     { name: "A", amount: 50000 }, 
+//     { name: "C", amount: 60000 }
+// ] 
 
-let total1;
-for(let a of list){
-    total1 = list.reduce((start, curr)=>{
-        return start+curr.amount;
-    },0)
+// let total1;
+// for(let a of list){
+//     total1 = list.reduce((start, curr)=>{
+//         return start+curr.amount;
+//     },0)
+// }
+
+// console.log(total1)
+
+
+let transactions = [
+    { type: "credit", amount: 1000 }, 
+{ type: "debit", amount: 300 }, 
+{ type: "credit", amount: 500 } 
+]
+let arr4=[];
+for(let a of transactions){
+    arr4 = transactions.filter((history)=>{
+        if(history.type!='debit'){
+            return history;
+        }
+    })
 }
 
-console.log(total1)
+console.log(arr4)
