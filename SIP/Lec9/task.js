@@ -31,12 +31,6 @@ console.log(arr);
 
 
 
-let company = [ 
-    { category: "Electronics", amount: 500 }, 
-    { category: "Books", amount: 100 }, 
-    { category: "Electronics", amount: 300 } 
-] 
-
 console.log("\n\n\n");
 
 

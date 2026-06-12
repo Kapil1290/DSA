@@ -1,1 +1,1 @@
-console.log(avg)
+start+curr.amount, 0
