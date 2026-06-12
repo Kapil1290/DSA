@@ -135,18 +135,33 @@
 // console.log(total1)
 
 
-let transactions = [
-    { type: "credit", amount: 1000 }, 
-{ type: "debit", amount: 300 }, 
-{ type: "credit", amount: 500 } 
-]
-let arr4=[];
-for(let a of transactions){
-    arr4 = transactions.filter((history)=>{
-        if(history.type!='debit'){
-            return history;
-        }
-    })
-}
+// let transactions = [
+//     { type: "credit", amount: 1000 }, 
+// { type: "debit", amount: 300 }, 
+// { type: "credit", amount: 500 } 
+// ]
+// let arr4=[];
+// for(let a of transactions){
+//     arr4 = transactions.filter((history)=>{
+//         if(history.type!='debit'){
+//             return history;
+//         }
+//     })
+// }
 
-console.log(arr4)
+// console.log(arr4)
+
+
+
+let data4 = [
+{ user: "A", action: "login" }, 
+{ user: "B", action: "logout" }, 
+{ user: "C", action: "login" } 
+]
+let count=0;
+for(let a of data4){
+    if(a.action=='login'){
+        count++;
+    }
+}
+console.log(count)
