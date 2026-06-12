@@ -16,13 +16,17 @@ let arr = [
 let avg=[];
 for(let i=0; i<arr.length; i++){
     avg[i] = arr[i].marks.map((mark)=> mark/arr[i].marks.length).reduce((a, b)=>a+b, 0)
-    arr.avgMarks = avg[i];
+    arr[i].avgMarks = avg[i];
 }
-// console.log(avg)
-for(let i=0; i<arr.length; i++){
-    console.log(arr.map((a)=> {
-        return{
-            a
-        }
-    }))
-}
+console.log("Task one done---------\n")
+console.log(avg)
+
+// for(let i=0; i<arr.length; i++){
+//     console.log(arr.map((a)=> {
+//         return{
+//             a
+//         }
+//     }))
+// }
+
+console.log(arr)
