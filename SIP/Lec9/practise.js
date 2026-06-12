@@ -167,14 +167,54 @@
 // console.log(count)
 
 
-let git = [
-    { repo: "A", stars: 100 }, 
-{ repo: "B", stars: 200 }
-]
-let total;
-for(let a of git){
-    total = git.reduce((start, curr)=>{
-        return start+curr.stars;
-    },0)
+// let git = [
+//     { repo: "A", stars: 100 }, 
+// { repo: "B", stars: 200 }
+// ]
+// let total;
+// for(let a of git){
+//     total = git.reduce((start, curr)=>{
+//         return start+curr.stars;
+//     },0)
+// }
+// console.log(total)
+
+
+// let data5 = [
+//     { name: "Laptop", price: 50000 }, 
+// { name: "Phone", price: 20000 }, 
+// { name: "Tablet", price: 15000 } 
+// ]
+// let arr5=[];
+// for(let a of data5){
+//     arr5 = data5.map((set)=>set.price)
+// }
+// console.log(arr5)
+
+
+// let data6 = [
+//     { name: "Laptop", price: 50000 }, 
+// { name: "Phone", price: 20000 }, 
+// { name: "Tablet", price: 15000 } 
+// ]
+
+// let high=0;
+// for(let a of data6){
+//     if(a.price>high){
+//         high=a.price;
+//     }
+// }
+// console.log(high)
+
+
+let number = [1,2,3,4,5,6];
+let temp=[];
+for(let a of number){
+    temp = number.filter((num)=>num%2==0)
 }
-console.log(total)
+console.log(temp)
+let temp2 = []
+for(let a of number){
+    temp2.push(a*a)
+}
+console.log(temp2)
