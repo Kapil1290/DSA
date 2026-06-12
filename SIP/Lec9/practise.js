@@ -40,13 +40,35 @@
 
 
 
-let sentance = "The fox is quick. The fox is smart." 
+// let sentance = "The fox is quick. The fox is smart." 
 
-console.log(sentance.toUpperCase());
-let count=0;
-for(let i=0; i<sentance.length-2; i++){
-    if(sentance[i]=='f' && sentance[i+1]=='o' && sentance[i+2]=='x'){
-        count++;
-    }
+// console.log(sentance.toUpperCase());
+// let count=0;
+// for(let i=0; i<sentance.length-2; i++){
+//     if(sentance[i]=='f' && sentance[i+1]=='o' && sentance[i+2]=='x'){
+//         count++;
+//     }
+// }
+// console.log(count)
+
+
+
+let list = [ 
+    { name: "A", salary: 50000 }, 
+    { name: "B", salary: 40000 }, 
+    { name: "C", salary: 60000 }
+] 
+
+let arr = [];
+for(let a of list){
+    arr.push(a.salary);
 }
-console.log(count)
+
+console.log(arr)
+let total;
+for(let i=0; i<list.length; i++){
+    total = list.reduce((a, b)=>{
+        return a+b.salary;
+    },0)
+}
+console.log(total)
