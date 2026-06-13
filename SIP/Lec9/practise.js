@@ -256,22 +256,22 @@
 
 
 
-let vote = [
-    { name: "John", age: 25 }, 
-{ name: "Emma", age: 16 }, 
-{ name: "Alex", age: 20 } 
-]
-let votes=[]
-// for(let a of vote){
-    votes= vote.filter((vote)=>{
-        if(vote.age>=18){
-            return {
-                vote
-            }
-        }
-    })
-// }
-console.log(votes)
+// let vote = [
+//     { name: "John", age: 25 }, 
+// { name: "Emma", age: 16 }, 
+// { name: "Alex", age: 20 } 
+// ]
+// let votes=[]
+
+//     votes= vote.filter((vote)=>{
+//         if(vote.age>=18){
+//             return {
+//                 vote
+//             }
+//         }
+//     })
+// // }
+// console.log(votes)
 
 
 
@@ -289,21 +289,21 @@ console.log(votes)
 
 
 
-let std = [
-    { name: "John", marks: 80 }, 
-{ name: "Emma", marks: 40 }, 
-{ name: "Alex", marks: 70 } 
-]
+// let std = [
+//     { name: "John", marks: 80 }, 
+// { name: "Emma", marks: 40 }, 
+// { name: "Alex", marks: 70 } 
+// ]
 
-let std1 = []
-    std1 = std.filter((stds)=>{
-        if(stds.marks>50){
-            return stds
-        }
-    })
-console.log(std1)
-std2 = []
- std2 = std.filter(stds => stds.marks>=50).map(stds => stds.name)
-console.log(std2)
+// let std1 = []
+//     std1 = std.filter((stds)=>{
+//         if(stds.marks>50){
+//             return stds
+//         }
+//     })
+// console.log(std1)
+// std2 = []
+//  std2 = std.filter(stds => stds.marks>=50).map(stds => stds.name)
+// console.log(std2)
 
 
