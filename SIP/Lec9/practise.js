@@ -256,22 +256,22 @@
 
 
 
-// let vote = [
-//     { name: "John", age: 25 }, 
-// { name: "Emma", age: 16 }, 
-// { name: "Alex", age: 20 } 
-// ]
-// let votes=[]
+let vote = [
+    { name: "John", age: 25 }, 
+{ name: "Emma", age: 16 }, 
+{ name: "Alex", age: 20 } 
+]
+let votes=[]
 // for(let a of vote){
-//     votes= vote.filter((vote)=>{
-//         if(vote.age>=18){
-//             return {
-//                 vote
-//             }
-//         }
-//     })
+    votes= vote.filter((vote)=>{
+        if(vote.age>=18){
+            return {
+                vote
+            }
+        }
+    })
 // }
-// console.log(votes)
+console.log(votes)
 
 
 
