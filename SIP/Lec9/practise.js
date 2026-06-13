@@ -296,20 +296,16 @@ let std = [
 ]
 
 let std1 = []
-for(let a of std){
+// for(let a of std){
     std1 = std.filter((stds)=>{
         if(stds.marks>50){
             return stds
         }
     })
-}
+// }
 console.log(std1)
 std2 = []
-for(let a of std){
-    std2 = std.filter((stds)=>{
-        if(stds.marks>50){
-            return stds.name
-        }
-    })
-}
+ std2 = std.filter(stds => stds.marks>=50).map(stds => stds.name)
 console.log(std2)
+
+
