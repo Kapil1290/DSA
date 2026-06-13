@@ -1,1 +1,1 @@
-start+curr.amount, 0
+stds.name

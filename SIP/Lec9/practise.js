@@ -207,14 +207,109 @@
 // console.log(high)
 
 
-let number = [1,2,3,4,5,6];
-let temp=[];
-for(let a of number){
-    temp = number.filter((num)=>num%2==0)
+// let number = [1,2,3,4,5,6];
+// let temp=[];
+// for(let a of number){
+//     temp = number.filter((num)=>num%2==0)
+// }
+// console.log(temp)
+// let temp2 = []
+// for(let a of number){
+//     temp2.push(a*a)
+// }
+// console.log(temp2)
+
+
+// let markss = [45, 80, 61, 90, 30];
+// let arr6=[];
+// for(let a of markss){
+//     arr6 = markss.filter((nums)=>nums>50)
+// } 
+// console.log(arr6)
+// let arrr = [];
+// for(let a of markss){
+//     arrr = markss.map((nums)=>nums/markss.length).reduce((start, curr)=>{
+//         return start+curr
+//     })
+// } 
+
+// console.log(arrr)
+
+
+
+// let names = ["john", "emma", "alex"];
+// let updated=[]
+// for(let a of names){
+//     updated = names.map((naam)=>naam.toUpperCase())
+// }
+// console.log(updated)
+
+
+// let nums = [12,33,7,8];
+// let countofnum=0;
+// for(let a of nums){
+//     countofnum = nums.reduce((start, curr)=>{
+//         return start+curr;
+//     })
+// }
+// console.log(countofnum)
+
+
+
+// let vote = [
+//     { name: "John", age: 25 }, 
+// { name: "Emma", age: 16 }, 
+// { name: "Alex", age: 20 } 
+// ]
+// let votes=[]
+// for(let a of vote){
+//     votes= vote.filter((vote)=>{
+//         if(vote.age>=18){
+//             return {
+//                 vote
+//             }
+//         }
+//     })
+// }
+// console.log(votes)
+
+
+
+// let prices = [
+//     { name: "Laptop", price: 50000 }, 
+// { name: "Phone", price: 20000 } 
+// ]
+// let updated_price = []
+// for(let a of prices){
+//     updated_price = prices.map((price)=>{
+//         return price.price - (10/100)*price.price;
+//     })
+// }
+// console.log(updated_price)
+
+
+
+let std = [
+    { name: "John", marks: 80 }, 
+{ name: "Emma", marks: 40 }, 
+{ name: "Alex", marks: 70 } 
+]
+
+let std1 = []
+for(let a of std){
+    std1 = std.filter((stds)=>{
+        if(stds.marks>50){
+            return stds
+        }
+    })
 }
-console.log(temp)
-let temp2 = []
-for(let a of number){
-    temp2.push(a*a)
+console.log(std1)
+std2 = []
+for(let a of std){
+    std2 = std.filter((stds)=>{
+        if(stds.marks>50){
+            return stds.name
+        }
+    })
 }
-console.log(temp2)
+console.log(std2)
