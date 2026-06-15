@@ -16,4 +16,9 @@ shadow
 bootstrap -> put the link of bootstrap and tailwind cdn
 closures in js
 
-    - no name of funtion called anonymous
+no name of funtion called anonymous
+
+find method, find the first element and return that element
+
+some method, if atleast one element give true
+every method, all should be satisfies the conditions
