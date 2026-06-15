@@ -32,7 +32,7 @@ let arr = new Array("Apple", "Banana", "Grapes");
 console.log(arr)
 
 arr.unshift("mongo")
-arr.shift()
+// arr.shift()
 console.log(arr)
 
 
