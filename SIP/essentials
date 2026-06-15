@@ -1,17 +1,19 @@
-Que:275
-Que:274
-Que:179
-Que:324
-Que:60
-Que:273
-Que:564
-Que:593
-Que:633
+Que: 275
+Que: 274
+Que: 179
+Que: 324
+Que: 60
+Que: 273
+Que: 564
+Que: 593
+Que: 633
 
 media query
 transition
 transform
 3d transitions
 shadow
-bootstrap  -> put the link of bootstrap and tailwind cdn
+bootstrap -> put the link of bootstrap and tailwind cdn
 closures in js
+
+    - no name of funtion called anonymous
