@@ -23,3 +23,13 @@ find method, find the first element and return that element
 
 some method, if atleast one element give true
 every method, all should be satisfies the conditions
+
+
+Strings in js methods like - toUpperCase(), toLowerCase(), trim()->remove left and right spaces
+include()-> to check the present ness of the string passed in method
+startWith() -> to check the start of string passed in method
+same as endWith() -> |
+indexOf() -> to check the index of 
+lastIndexOf() -> give last index of passed string
+slice() -> extract the characters between defined range
+
