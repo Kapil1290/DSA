@@ -101,5 +101,13 @@ console.log(p)
 
 let arr2 = [1,2,3,4,5,6,7,8];
 
-let x1 = arr2.filter((f)=>f%2==0).map((f)=>f*f)
+let x1 = arr2.filter((f)=>f%2==0).map((x)=>x*x)
 console.log(x1)
+
+let salary = [
+    {name:"A", sal:12000},
+    {name:"B", sal:12000}
+]
+
+let x3 = salary.reduce((start, curr)=>start+=curr.sal, 0)
+console.log(x3)
