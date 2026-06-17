@@ -82,3 +82,7 @@ let product = [
 
 let arr1 = product.map((product)=>product.name);
 console.log(arr1)
+
+let word = ["apple", "banana", "cat", "grapes"]
+let w = word.filter((w)=>w.length>5);
+console.log(w)
