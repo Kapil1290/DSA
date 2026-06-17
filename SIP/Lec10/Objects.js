@@ -111,3 +111,13 @@ let salary = [
 
 let x3 = salary.reduce((start, curr)=>start+=curr.sal, 0)
 console.log(x3)
+
+let std = [
+    {name:"A", mark:35},
+    {name:"B", mark:45}, 
+    {name:"C", mark:58}
+]
+
+let st = std.filter((s)=>s.mark>40).map((a)=>a.name)
+
+console.log(st)
