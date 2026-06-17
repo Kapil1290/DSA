@@ -74,3 +74,11 @@ for(let i=0; i<arr.length; i++){
 }
 
 console.log(arr)
+
+let product = [
+    {id:1, name:"laptop"},
+    {id:1, name:"mouse"}
+]
+
+let arr1 = product.map((product)=>product.name);
+console.log(arr1)
