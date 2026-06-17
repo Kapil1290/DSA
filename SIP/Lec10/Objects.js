@@ -121,3 +121,6 @@ let std = [
 let st = std.filter((s)=>s.mark>40).map((a)=>a.name)
 
 console.log(st)
+
+let x5 = arr2.reduce((start, curr)=>start+=curr, 0);
+console.log(x5/arr2.length)
