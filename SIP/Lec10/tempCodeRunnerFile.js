@@ -1,1 +1,1 @@
-Object.seal()
+console.log(x)

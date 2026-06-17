@@ -86,3 +86,20 @@ console.log(arr1)
 let word = ["apple", "banana", "cat", "grapes"]
 let w = word.filter((w)=>w.length>5);
 console.log(w)
+
+
+let people = [
+    {name:"A", age:23},
+    {name:"B", age:12}
+]
+let p = people.filter((a)=>a.age>=18);
+console.log(p)
+
+// let x = word.map((val)=>val.length)
+// let x = word.reduce((start, curr)=>start+=curr.length, 0);
+// console.log(x)
+
+let arr2 = [1,2,3,4,5,6,7,8];
+
+let x1 = arr2.filter((f)=>f%2==0).map((f)=>f*f)
+console.log(x1)
