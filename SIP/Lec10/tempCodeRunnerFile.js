@@ -1,1 +1,1 @@
-indore
+Object.seal()
