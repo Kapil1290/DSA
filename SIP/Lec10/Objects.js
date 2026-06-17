@@ -61,3 +61,7 @@ console.log("name" in detail)
 
 // seal, we can update but not add and delete from obj
 Object.seal()
+
+// deep copy means both reference are different
+// but in shallow copy both references are same 
+// both work with nested objects
