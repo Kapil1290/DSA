@@ -131,3 +131,41 @@ let ans = arr.reduce((occ, fruit)=>{
 },{})
 
 console.log(ans);
+
+
+let student = [
+    {name: "kapil", marks:[80,90,85]},
+    {name: "deepak", marks:[90,99,96]},
+    {name: "arjun", marks:[80,90,79]}
+]
+
+
+let ans1 = student.map((s)=>{
+   return {
+     name:s.name,
+     avg:s.marks.reduce((start,curr)=>{
+        return start+=curr;
+    },0)/s.marks.length,
+   }
+}).filter((a)=>a.avg>=85);
+// .sort((a,b)=>b.avg-a.avg)
+// .map((s)=>s.name);
+
+console.log(ans1)
+
+
+let products = [
+    {name:"laptop", categ:"electronics"},
+    {name:"phone", categ:"electronics"},
+    {name:"shirt", categ:"clothing"}
+]
+
+let ans2 = products.reduce((group, product)=>{
+    if(!group[product.categ]){
+        group[product.categ]=[]
+    }
+    group[product.categ].push(product.name);
+    return group;
+}, {})
+
+console.log(ans2)
