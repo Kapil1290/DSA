@@ -67,7 +67,7 @@ Object.seal()
 // both work with nested objects
 
 
-let arr = ["gagan", "amit", "kapil"]
+let arr = ["gagan", "amit", "kapil", "kapil", "gagan"]
 
 for(let i=0; i<arr.length; i++){
     arr[i] = arr[i].toUpperCase();
@@ -124,3 +124,10 @@ console.log(st)
 
 let x5 = arr2.reduce((start, curr)=>start+=curr, 0);
 console.log(x5/arr2.length)
+
+let ans = arr.reduce((occ, fruit)=>{
+    occ[fruit] = (occ[fruit]||0)+1;
+    return occ;
+},{})
+
+console.log(ans);
