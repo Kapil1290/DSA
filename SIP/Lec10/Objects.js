@@ -161,7 +161,7 @@ let products = [
 ]
 
 let ans2 = products.reduce((group, product)=>{
-    if(!group[product.categ]){
+    if(!group.product.categ){
         group[product.categ]=[]
     }
     group[product.categ].push(product.name);
