@@ -147,9 +147,9 @@ let ans1 = student.map((s)=>{
         return start+=curr;
     },0)/s.marks.length,
    }
-}).filter((a)=>a.avg>=85);
-// .sort((a,b)=>b.avg-a.avg)
-// .map((s)=>s.name);
+}).filter((a)=>a.avg>=85)
+.sort((a,b)=>b.avg-a.avg)
+.map((s)=>s.name);
 
 console.log(ans1)
 
