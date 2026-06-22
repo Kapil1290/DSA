@@ -43,3 +43,8 @@ pyramid of doom
 or 
 callback hell
 
+Promise methods
+race()
+any()
+allsettled() give all succes and rej info
+

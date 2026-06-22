@@ -1,8 +1,17 @@
 const promise = new Promise((resolve, reject)=>{
-    let success = true;
-    if(success){
+    let success = false;
+
+        if(success){
         resolve("task completed");
     }else{
         reject("not fullfilled");
     }
+
+
+});
+promise.then(result=>{
+    console.log(result)
+})
+.catch(err=>{
+console.log("password mistake")
 })
