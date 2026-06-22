@@ -34,3 +34,12 @@ indexOf() -> to check the index of
 lastIndexOf() -> give last index of passed string
 slice() -> extract the characters between defined range
 
+
+setInterval() --> execute 
+setTimeOut()
+clearInterval()
+
+pyramid of doom
+or 
+callback hell
+
