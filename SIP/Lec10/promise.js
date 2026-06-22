@@ -35,3 +35,16 @@ function download(){
 }
 
 hello(download)
+
+
+function login(callback){
+    setTimeout(() => {
+        console.log("")
+    }, 2000);
+}
+
+function getProfile(callback){
+    setTimeout(() => {
+        
+    }, timeout);
+}
