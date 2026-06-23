@@ -35,7 +35,6 @@ wild.eat()
 //MULTI-LEVEL INHERITANCE
 class Dog extends Animal{
     constructor(name, age){
-        
         super(name)
         this.age = age;
     }
@@ -53,8 +52,8 @@ console.log(c)
 c.eat()
 
 
-
-class Cat extends Dog{
+// MULTI-LEVEL INHERITANCE
+class Cat extends Animal{
     constructor(name){
         super(name)
     }
