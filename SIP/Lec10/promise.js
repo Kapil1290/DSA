@@ -165,15 +165,15 @@
 
 
 function oddEven(val){
-    return(new Promise((res)=>{
+    return new Promise((res)=>{
         if(val%2==0)
             console.log("Even")
         else
             console.log("Odd")
-    }))
+    })
 }
 
-oddEven(34)
+oddEven(57)
 // .then((res)=>{
 //     console.log
 // })
