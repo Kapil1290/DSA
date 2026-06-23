@@ -147,28 +147,33 @@
 //     })
 // })
 
-function downloadFile(name){
-    return new Promise((res)=>{
-        console.log("downloading " + name + " Started")
-        setTimeout(() => {
-        console.log("download completed")
-    }, 2000);
-    res()
-    })
-}
-
-downloadFile("Kapil")
-.then(res=>{
-    console.log("Task Done")
-    
-})
-
-
-// function oddEven(val){
-//     return()
+// function downloadFile(name){
+//     return new Promise((res)=>{
+//         console.log("downloading " + name + " Started")
+//         setTimeout(() => {
+//         console.log("download completed")
+//     }, 2000);
+//     res()
+//     })
 // }
 
+// downloadFile("Kapil")
+// .then(res=>{
+//     console.log("Task Done")
+    
+// })
+
+
+function oddEven(val){
+    return(new Promise((res)=>{
+        if(val%2==0)
+            console.log("Even")
+        else
+            console.log("Odd")
+    }))
+}
+
 oddEven(34)
-.then((res)=>{
-    console.log
-})
+// .then((res)=>{
+//     console.log
+// })
