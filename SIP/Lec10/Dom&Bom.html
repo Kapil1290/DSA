@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    // let di = document.createElement("div")
+    // di.height = "200px"
+    // di.width = "300px"
+
+    // let labeel = document.createElement("label")
+    // labeel.innerText="Enter Name"
+    // labeel.style.fontSize = "30px"
+    // labeel.style.paddingTop = "500px"
+
+    // let inp = document.createElement("input");
+    // inp.placeholder = "Enter Here";
+    // inp.style.width = "200px"
+    // inp.style.height = "30px"
+    // inp.style.padding = "5px"
+    // inp.style.border = "2px"
+    // inp.style.borderRadius = "5px";
+    // inp.style.marginLeft = "3px"
+
+    // let b = document.createElement("br")
+
+    // let btn = document.createElement("button")
+    // btn.textContent = "click Me";
+    // btn.style.backgroundColor = "green"
+    // btn.style.color = "white"
+    // btn.style.width = "100px"
+    // btn.style.height = "40px"
+    // btn.style.borderRadius = "5px"
+    // btn.style.marginLeft = "3px"
+
+
+    // document.body.style.backgroundColor = "yellow"
+    // document.body.style.color = ""
+
+    // document.body.appendChild(di)
+    // document.di.appendChild(labeel, inp, b ,btn)
+
+
+    // 1. Reset Global Page Styles
+// document.body.style.margin = "0";
+// document.body.style.padding = "0";
+// document.body.style.backgroundColor = "#111";
+// document.body.style.fontFamily = "'Helvetica Neue', Helvetica, Arial, sans-serif";
+// document.body.style.color = "#fff";
+// document.body.style.overflowX = "hidden";
+
+// // 2. Create Navbar Container
+// const navbar = document.createElement("nav");
+// navbar.style.position = "fixed";
+// navbar.style.top = "0";
+// navbar.style.width = "100%";
+// navbar.style.height = "70px";
+// navbar.style.display = "flex";
+// navbar.style.justifyContent = "space-between";
+// navbar.style.alignItems = "center";
+// navbar.style.padding = "0 4%";
+// navbar.style.boxSizing = "border-box";
+// navbar.style.zIndex = "1000";
+// navbar.style.transition = "background-color 0.5s";
+// navbar.style.background = "linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%)";
+
+// // Dynamic Navbar Background on Scroll
+// window.addEventListener("scroll", () => {
+//   navbar.style.backgroundColor = window.scrollY > 50 ? "#141414" : "transparent";
+// });
+
+// // Logo
+// const logo = document.createElement("h1");
+// logo.textContent = "NETFLIX";
+// logo.style.color = "#E50914";
+// logo.style.fontSize = "30px";
+// logo.style.margin = "0";
+// logo.style.letterSpacing = "1px";
+// logo.style.cursor = "pointer";
+// navbar.appendChild(logo);
+
+// // Profile Icon Placeholder
+// const profile = document.createElement("div");
+// profile.style.width = "32px";
+// profile.style.height = "32px";
+// profile.style.backgroundColor = "#e50914";
+// profile.style.borderRadius = "4px";
+// profile.style.cursor = "pointer";
+// navbar.appendChild(profile);
+
+// document.body.appendChild(navbar);
+
+// // 3. Create Hero Banner Container
+// const hero = document.createElement("header");
+// hero.style.height = "80vh";
+// hero.style.position = "relative";
+// hero.style.display = "flex";
+// hero.style.alignItems = "center";
+// hero.style.paddingLeft = "4%";
+// hero.style.background = "linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url('https://picsum.photos') no-repeat center center/cover";
+
+// // Hero Content Wrapper
+// const heroContent = document.createElement("div");
+// heroContent.style.maxWidth = "500px";
+// heroContent.style.zIndex = "2";
+
+// const heroTitle = document.createElement("h2");
+// heroTitle.textContent = "Stranger Things";
+// heroTitle.style.fontSize = "3.5rem";
+// heroTitle.style.margin = "0 0 15px 0";
+// heroTitle.style.textShadow = "2px 2px 4px rgba(0,0,0,0.5)";
+
+// const heroDesc = document.createElement("p");
+// heroDesc.textContent = "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.";
+// heroDesc.style.fontSize = "1.1rem";
+// heroDesc.style.lineHeight = "1.4";
+// heroDesc.style.margin = "0 0 20px 0";
+// heroDesc.style.textShadow = "1px 1px 2px rgba(0,0,0,0.5)";
+
+// // Hero Buttons Container
+// const btnContainer = document.createElement("div");
+
+// const playBtn = document.createElement("button");
+// playBtn.textContent = "▶ Play";
+// playBtn.style.padding = "10px 25px";
+// playBtn.style.fontSize = "1.2rem";
+// playBtn.style.fontWeight = "bold";
+// playBtn.style.marginRight = "10px";
+// playBtn.style.border = "none";
+// playBtn.style.borderRadius = "4px";
+// playBtn.style.cursor = "pointer";
+// playBtn.style.backgroundColor = "#fff";
+// playBtn.style.color = "#000";
+
+// const infoBtn = document.createElement("button");
+// infoBtn.textContent = "ⓘ More Info";
+// infoBtn.style.padding = "10px 25px";
+// infoBtn.style.fontSize = "1.2rem";
+// infoBtn.style.fontWeight = "bold";
+// infoBtn.style.border = "none";
+// infoBtn.style.borderRadius = "4px";
+// infoBtn.style.cursor = "pointer";
+// infoBtn.style.backgroundColor = "rgba(109, 109, 110, 0.7)";
+// infoBtn.style.color = "#fff";
+
+// btnContainer.appendChild(playBtn);
+// btnContainer.appendChild(infoBtn);
+// heroContent.appendChild(heroTitle);
+// heroContent.appendChild(heroDesc);
+// heroContent.appendChild(btnContainer);
+// hero.appendChild(heroContent);
+
+// // Bottom Fade Overlay for Hero
+// const heroFade = document.createElement("div");
+// heroFade.style.position = "absolute";
+// heroFade.style.bottom = "0";
+// heroFade.style.left = "0";
+// heroFade.style.width = "100%";
+// heroFade.style.height = "100px";
+// heroFade.style.background = "linear-gradient(to top, #111, transparent)";
+// hero.appendChild(heroFade);
+
+// document.body.appendChild(hero);
+
+// // 4. Create Video Carousel Rows
+// const contentSection = document.createElement("main");
+// contentSection.style.padding = "20px 0 40px 0";
+// contentSection.style.position = "relative";
+// contentSection.style.top = "-50px";
+// contentSection.style.zIndex = "5";
+
+// const categories = ["Trending Now", "Popular on Netflix", "Action Thrillers", "Comedies"];
+
+// categories.forEach((categoryTitle, catIndex) => {
+//   const row = document.createElement("div");
+//   row.style.marginBottom = "30px";
+//   row.style.paddingLeft = "4%";
+
+//   const title = document.createElement("h3");
+//   title.textContent = categoryTitle;
+//   title.style.fontSize = "1.4rem";
+//   title.style.margin = "0 0 10px 0";
+//   row.appendChild(title);
+
+//   const cardContainer = document.createElement("div");
+//   cardContainer.style.display = "flex";
+//   cardContainer.style.overflowX = "auto";
+//   cardContainer.style.scrollBehavior = "smooth";
+//   cardContainer.style.paddingBottom = "10px";
+//   // Hide scrollbar syntax
+//   cardContainer.style.scrollbarWidth = "none"; 
+//   cardContainer.style.msOverflowStyle = "none"; 
+
+//   // Generate 6 Movie Cards per row
+//   for (let i = 1; i <= 6; i++) {
+//     const card = document.createElement("div");
+//     card.style.flex = "0 0 auto";
+//     card.style.width = "220px";
+//     card.style.height = "125px";
+//     card.style.marginRight = "8px";
+//     card.style.borderRadius = "4px";
+//     card.style.cursor = "pointer";
+//     card.style.transition = "transform 0.3s ease";
+//     card.style.background = `url('https://picsum.photos{catIndex * 6 + i}') no-repeat center center/cover`;
+
+//     // Hover effect using JavaScript listeners
+//     card.addEventListener("mouseenter", () => {
+//       card.style.transform = "scale(1.08)";
+//     });
+//     card.addEventListener("mouseleave", () => {
+//       card.style.transform = "scale(1)";
+//     });
+
+//     cardContainer.appendChild(card);
+//   }
+
+//   row.appendChild(cardContainer);
+//   contentSection.appendChild(row);
+// });
+
+// document.body.appendChild(contentSection);
+
+const heroData = {
+  title: "Stranger Things",
+  desc: "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.",
+  image: "https://unsplash.com" // Dark aesthetic cinematic background
+};
+
+const rowsData = [
+  {
+    title: "Trending Now",
+    images: [
+      "https://images.unsplash.com/photo-1781633237528-d19707220264?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8", // Sci-Fi / Cyberpunk
+      "https://cdn.pixabay.com/photo/2017/03/28/12/19/cape-cod-2181999_640.jpg", // Movie production / Drama
+      "https://cdn.pixabay.com/photo/2017/12/29/12/13/nature-3047449_1280.jpg", // Dark Abstract / Thriller
+      "https://unsplash.com", // Retro Game / Adventure
+      "https://unsplash.com", // Popcorn / Cinema vibe
+      "https://unsplash.com"  // Theater stage / Mystery
+    ]
+  },
+  {
+    title: "Popular on Netflix",
+    images: [
+      "https://images.unsplash.com/photo-1781633237528-d19707220264?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8", // Fantasy / Magic Castle
+      "https://cdn.pixabay.com/photo/2017/03/28/12/19/cape-cod-2181999_640.jpg", // Dark Crown / Royal Drama
+      "https://cdn.pixabay.com/photo/2017/12/29/12/13/nature-3047449_1280.jpg", // Headset / Music Documentary
+      "https://cdn.pixabay.com/photo/2017/03/28/12/20/architecture-2182003_640.jpg", // Old House / Horror
+      "https://cdn.pixabay.com/photo/2017/03/27/15/18/autumn-2179340_1280.jpg", // Moody Cityscape / Crime Noir
+      "https://cdn.pixabay.com/photo/2017/03/27/15/21/animal-2179357_1280.jpg"  // Smoky Atmosphere / Suspense
+    ]
+  }
+];
+
+
+const styleTag = document.createElement("style");
+styleTag.textContent = `
+
+  .movie-row-container::-webkit-scrollbar {
+    display: none;
+  }
+  .movie-row-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  /* Interactive UI State Animations via CSS */
+  .hero-btn-play:hover {
+    background-color: rgba(255, 255, 255, 0.75) !important;
+  }
+  .hero-btn-info:hover {
+    background-color: rgba(109, 109, 110, 0.4) !important;
+  }
+  .movie-card {
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s ease !important;
+  }
+  .movie-card:hover {
+    transform: scale(1.4) !important;
+    z-index: 10;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.6);
+  }
+`;
+document.head.appendChild(styleTag);
+
+document.body.style.margin = "0";
+document.body.style.padding = "0";
+document.body.style.backgroundColor = "#141414";
+document.body.style.fontFamily = "'Helvetica Neue', Helvetica, Arial, sans-serif";
+document.body.style.color = "#fff";
+document.body.style.overflowX = "hidden";
+
+
+const navbar = document.createElement("nav");
+navbar.style.position = "fixed";
+navbar.style.top = "0";
+navbar.style.width = "100%";
+navbar.style.height = "68px";
+navbar.style.display = "flex";
+navbar.style.justifyContent = "space-between";
+navbar.style.alignItems = "center";
+navbar.style.padding = "0 4%";
+navbar.style.boxSizing = "border-box";
+navbar.style.zIndex = "100";
+navbar.style.transition = "background-color 0.5s ease";
+navbar.style.background = "linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%)";
+
+window.addEventListener("scroll", () => {
+  navbar.style.backgroundColor = window.scrollY > 20 ? "#141414" : "transparent";
+});
+
+const logo = document.createElement("h1");
+logo.textContent = "NETFLIX";
+logo.style.color = "#E50914";
+logo.style.fontSize = "28px";
+logo.style.margin = "0";
+logo.style.letterSpacing = "0.5px";
+logo.style.cursor = "pointer";
+navbar.appendChild(logo);
+
+const profile = document.createElement("div");
+profile.style.width = "32px";
+profile.style.height = "32px";
+profile.style.backgroundColor = "#b9090b";
+profile.style.borderRadius = "4px";
+profile.style.cursor = "pointer";
+navbar.appendChild(profile);
+
+document.body.appendChild(navbar);
+
+const hero = document.createElement("header");
+hero.style.height = "85vh";
+hero.style.position = "relative";
+hero.style.display = "flex";
+hero.style.alignItems = "center";
+hero.style.paddingLeft = "4%";
+hero.style.background = `linear-gradient(to right, rgba(20,20,20,0.9) 20%, rgba(20,20,20,0.3) 50%, rgba(20,20,20,0) 100%), url('${heroData.image}') no-repeat center center/cover`;
+
+const heroContent = document.createElement("div");
+heroContent.style.maxWidth = "600px";
+heroContent.style.zIndex = "2";
+
+const heroTitle = document.createElement("h2");
+heroTitle.textContent = heroData.title;
+heroTitle.style.fontSize = "4.5rem";
+heroTitle.style.fontWeight = "bold";
+heroTitle.style.margin = "0 0 20px 0";
+
+const heroDesc = document.createElement("p");
+heroDesc.textContent = heroData.desc;
+heroDesc.style.fontSize = "1.2rem";
+heroDesc.style.lineHeight = "1.4";
+heroDesc.style.margin = "0 0 25px 0";
+heroDesc.style.textShadow = "2px 2px 4px rgba(0,0,0,0.8)";
+
+const btnContainer = document.createElement("div");
+btnContainer.style.display = "flex";
+btnContainer.style.gap = "1rem";
+
+const playBtn = document.createElement("button");
+playBtn.className = "hero-btn-play";
+playBtn.textContent = "▶ Play";
+playBtn.style.padding = "12px 30px";
+playBtn.style.fontSize = "1.1rem";
+playBtn.style.fontWeight = "bold";
+playBtn.style.border = "none";
+playBtn.style.borderRadius = "4px";
+playBtn.style.cursor = "pointer";
+playBtn.style.backgroundColor = "#fff";
+playBtn.style.color = "#000";
+playBtn.style.transition = "background-color 0.2s ease";
+
+const infoBtn = document.createElement("button");
+infoBtn.className = "hero-btn-info";
+infoBtn.textContent = "ⓘ More Info";
+infoBtn.style.padding = "12px 30px";
+infoBtn.style.fontSize = "1.1rem";
+infoBtn.style.fontWeight = "bold";
+infoBtn.style.border = "none";
+infoBtn.style.borderRadius = "4px";
+infoBtn.style.cursor = "pointer";
+infoBtn.style.backgroundColor = "rgba(109, 109, 110, 0.7)";
+infoBtn.style.color = "#fff";
+infoBtn.style.transition = "background-color 0.2s ease";
+
+btnContainer.appendChild(playBtn);
+btnContainer.appendChild(infoBtn);
+heroContent.appendChild(heroTitle);
+heroContent.appendChild(heroDesc);
+heroContent.appendChild(btnContainer);
+hero.appendChild(heroContent);
+
+// Bottom Vignette Overlapping Edge
+const heroFade = document.createElement("div");
+heroFade.style.position = "absolute";
+heroFade.style.bottom = "0";
+heroFade.style.left = "0";
+heroFade.style.width = "100%";
+heroFade.style.height = "150px";
+heroFade.style.background = "linear-gradient(to top, #141414, transparent)";
+hero.appendChild(heroFade);
+
+document.body.appendChild(hero);
+
+const mainSection = document.createElement("main");
+mainSection.style.padding = "0 0 50px 0";
+mainSection.style.position = "relative";
+mainSection.style.top = "-80px";
+mainSection.style.zIndex = "5";
+
+rowsData.forEach((rowData) => {
+  const row = document.createElement("div");
+  row.style.marginBottom = "40px";
+  row.style.paddingLeft = "4%";
+
+  const title = document.createElement("h3");
+  title.textContent = rowData.title;
+  title.style.fontSize = "1.4rem";
+  title.style.fontWeight = "bold";
+  title.style.margin = "0 0 15px 0";
+  row.appendChild(title);
+
+  const cardContainer = document.createElement("div");
+  cardContainer.className = "movie-row-container";
+  cardContainer.style.display = "flex";
+  cardContainer.style.overflowX = "auto";
+  cardContainer.style.borderRadius = "10px"
+  cardContainer.style.scrollBehavior = "smooth";
+  cardContainer.style.padding = "15px 0";
+
+  rowData.images.forEach((imgUrl) => {
+    const card = document.createElement("div");
+    card.className = "movie-card";
+    card.style.flex = "0 0 auto";
+    card.style.width = "240px";
+    card.style.height = "135px";
+    card.style.marginRight = "10px";
+    card.style.borderRadius = "4px";
+    card.style.cursor = "pointer";
+    card.style.background = `url('${imgUrl}') no-repeat center center/cover`;
+    
+    cardContainer.appendChild(card);
+  });
+
+  row.appendChild(cardContainer);
+  mainSection.appendChild(row);
+});
+
+document.body.appendChild(mainSection);
+
+
+</script>
+</html>
