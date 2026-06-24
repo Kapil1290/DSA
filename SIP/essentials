@@ -55,3 +55,6 @@ OOPs
 object - data and behavior
 Class a blueprint or template for creating object
 
+
+QuerySelector -> select only first founded element from top
+
