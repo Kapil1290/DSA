@@ -40,6 +40,3 @@ arr.forEach((i)=>{console.log(i)})
 
 let x = arr.find((i)=>i>3)
 console.log(x)
-
-
-
