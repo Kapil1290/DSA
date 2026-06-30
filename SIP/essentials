@@ -59,5 +59,7 @@ QuerySelector -> select only first founded element from top
 parent.append
 parent.prepend -> add at last
 
-localstorage stores only strings and 
-
+localstorage stores only strings and  -> permanents
+session store till tab opens
+json.stringify convert obj to string 
+json.parse opposite of above
