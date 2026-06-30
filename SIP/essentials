@@ -56,4 +56,8 @@ Class a blueprint or template for creating object
 
 
 QuerySelector -> select only first founded element from top
+parent.append
+parent.prepend -> add at last
+
+localstorage stores only strings and 
 
