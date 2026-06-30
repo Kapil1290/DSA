@@ -66,3 +66,6 @@ json.parse opposite of above
 doc.body.classlist.toggle("dark)
 
 AJAX  async, js, and xml
+xmlhttpreques xmlhttpreques
+
+xhr.open(GET, ), send, onload
