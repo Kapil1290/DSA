@@ -63,3 +63,6 @@ localstorage stores only strings and  -> permanents
 session store till tab opens
 json.stringify convert obj to string 
 json.parse opposite of above
+doc.body.classlist.toggle("dark)
+
+AJAX  async, js, and xml
