@@ -8,14 +8,279 @@
 <body>
     <div>
         <h1>TO DO List</h1>
-        <input type="text" required>
+        <input id="inp" type="text" required>
+        <button>add</button>
+        
         <ul id="tasks">
-            
+
         </ul>
+
     </div>
+
+    
 </body>
+<script>
+    let count=0;
+    let tasks = document.getElementById("tasks")
+    let btn = document.querySelector("button")
+    let inp = document.getElementById("inp")
+
+
+ 
+
+    btn.addEventListener('click', (e)=>{
+        let list = document.createElement("li")
+        
+        let val = inp.value.toUpperCase()
+        list.append(val)
+        
+        tasks.append(list)
+        
+        ijectDeleteButton(list);
+        inp.value=""
+        
+    })
+        function ijectDeleteButton(list){
+            let btn = document.createElement("button")
+        btn.innerText="Delete"
+        btn.id = count;
+        btn.style.marginLeft = "20px"
+        btn.className = "class-btn"
+        console.log(btn.className)
+        count++;
+        list.append( btn)   
+
+        }
+
+        tasks.addEventListener('click', (e)=>{
+            if(e.target.classList.contains('class-btn')){
+                let specificbtn = e.target.parentElement;
+                specificbtn.remove();
+            }
+        })
+
+
+
+
+</script>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full CRUD Todo List</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .input-group {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px 0 0 4px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        #addBtn {
+            padding: 10px 15px;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            font-weight: bold;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+
+        #addBtn:hover {
+            background-color: #218838;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            background-color: #f9f9f9;
+            padding: 12px;
+            border: 1px solid #eee;
+            margin-bottom: 8px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .todo-text {
+            flex: 1;
+            word-break: break-all;
+            margin-right: 10px;
+        }
+
+        .edit-input {
+            flex: 1;
+            padding: 6px;
+            font-size: 14px;
+            margin-right: 10px;
+            border: 1px solid #007bff;
+            border-radius: 4px;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 5px;
+        }
+
+        button.action-btn {
+            border: none;
+            padding: 6px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            color: white;
+        }
+
+        .edit-btn { background-color: #ffc107; color: #212529 !important; }
+        .edit-btn:hover { background-color: #e0a800; }
+        
+        .save-btn { background-color: #007bff; }
+        .save-btn:hover { background-color: #0069d9; }
+
+        .delete-btn { background-color: #dc3545; }
+        .delete-btn:hover { background-color: #c82333; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>CRUD Todo List</h2>
+    
+    <div class="input-group">
+        <input type="text" id="todoInput" placeholder="Add a new task...">
+        <button id="addBtn">Add</button>
+    </div>
+
+    <ul id="todoList">
+        <li>
+            <span class="todo-text">Build a JavaScript app</span>
+            <div class="btn-group">
+                <button class="action-btn edit-btn">Edit</button>
+                <button class="action-btn delete-btn">Delete</button>
+            </div>
+        </li>
+        <li>
+            <span class="todo-text">Master DOM manipulation</span>
+            <div class="btn-group">
+                <button class="action-btn edit-btn">Edit</button>
+                <button class="action-btn delete-btn">Delete</button>
+            </div>
+        </li>
+    </ul>
+</div>
 
 <script>
-    let taskContainer = document.ge
+    const todoList = document.getElementById('todoList');
+    const todoInput = document.getElementById('todoInput');
+    const addBtn = document.getElementById('addBtn');
+
+    // --- 1. CREATE Operation ---
+    addBtn.addEventListener('click', createTodo);
+    todoInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') createTodo(); });
+
+    function createTodo() {
+        const textValue = todoInput.value.trim();
+        if (textValue === '') return alert('Task cannot be empty!');
+
+        const li = document.createElement('li');
+        li.innerHTML = `
+            <span class="todo-text">${textValue}</span>
+            <div class="btn-group">
+                <button class="action-btn edit-btn">Edit</button>
+                <button class="action-btn delete-btn">Delete</button>
+            </div>
+        `;
+        
+        todoList.appendChild(li);
+        todoInput.value = ''; // Reset input
+    }
+
+    // --- 2. READ, UPDATE, & DELETE (via Event Delegation) ---
+    todoList.addEventListener('click', (event) => {
+        const target = event.target;
+        const li = target.closest('li'); // Finds the parent <li> securely
+
+        // --- DELETE Operation ---
+        if (target.classList.contains('delete-btn')) {
+            li.remove();
+        }
+
+        // --- UPDATE Operation (Switch to Edit Mode) ---
+        else if (target.classList.contains('edit-btn')) {
+            const textSpan = li.querySelector('.todo-text');
+            const currentText = textSpan.textContent;
+
+            // Replace text span with an input element
+            const inputField = document.createElement('input');
+            inputField.type = 'text';
+            inputField.className = 'edit-input';
+            inputField.value = currentText;
+            li.replaceChild(inputField, textSpan);
+
+            // Change "Edit" button to "Save"
+            target.textContent = 'Save';
+            target.className = 'action-btn save-btn';
+        }
+
+        // --- UPDATE Operation (Save the changes) ---
+        else if (target.classList.contains('save-btn')) {
+            const inputField = li.querySelector('.edit-input');
+            const updatedText = inputField.value.trim();
+
+            if (updatedText === '') return alert('Task cannot be empty!');
+
+            // Replace input element back with the text span
+            const textSpan = document.createElement('span');
+            textSpan.className = 'todo-text';
+            textSpan.textContent = updatedText;
+            li.replaceChild(textSpan, inputField);
+
+            // Change "Save" button back to "Edit"
+            target.textContent = 'Edit';
+            target.className = 'action-btn edit-btn';
+        }
+    });
 </script>
-</html>
+
+</body>
+</html> -->
+
