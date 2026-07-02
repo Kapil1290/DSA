@@ -69,3 +69,10 @@ AJAX  async, js, and xml
 xmlhttpreques xmlhttpreques
 
 xhr.open(GET, ), send, onload
+
+
+
+
+Node ----------
+2006 ryan dahl
+same js lang for back and front --> faster
