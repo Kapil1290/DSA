@@ -76,3 +76,21 @@ xhr.open(GET, ), send, onload
 Node ----------
 2006 ryan dahl
 same js lang for back and front --> faster
+
+node archi--
+v8 engine
+event driven archi
+non blocking i/o -> doesn't wait for specific task because it is single threaded
+
+commands ----
+npm init -y -> for install package.json 
+above but manual then npm init
+
+
+AI Workshop
+Teachable machine
+--by default Model doesn't have memory, we need to give it by own, model are stateless
+
+prompt rule
+R C T F ROLE, CONTEXT, TASK, FORMAT
+role->from doctor, lawyer.
