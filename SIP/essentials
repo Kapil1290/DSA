@@ -87,6 +87,12 @@ npm init -y -> for install package.json
 above but manual then npm init
 
 
+req.params --> getting index
+
+
+
+
+
 AI Workshop
 Teachable machine
 --by default Model doesn't have memory, we need to give it by own, model are stateless
