@@ -88,7 +88,14 @@ above but manual then npm init
 
 
 req.params --> getting index
+req.query --> give key values name = kapil
 
+res.json
+res.send
+
+client-->middleware-->route-->response
+types of middleware
+application
 
 
 
@@ -100,3 +107,6 @@ Teachable machine
 prompt rule
 R C T F ROLE, CONTEXT, TASK, FORMAT
 role->from doctor, lawyer.
+
+Backend Tool -> n8n 
+
