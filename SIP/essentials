@@ -110,3 +110,15 @@ role->from doctor, lawyer.
 
 Backend Tool -> n8n 
 
+
+
+--Databases in SIP 
+SQL->MySQL Postgresql, oracle, sql server
+NOSQL-> cassendra, redis mongodb, firebase 
+
+Relationship 
+one to many
+many to many 
+many to one
+
+
