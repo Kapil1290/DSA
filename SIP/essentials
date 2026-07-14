@@ -122,3 +122,8 @@ many to many
 many to one
 
 
+NOSQL > fast, flexible, json, easy to document
+
+//npm init -y
+npm i express
+
